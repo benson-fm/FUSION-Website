@@ -13,6 +13,7 @@ import { AlumniPage } from './pages/AlumniPage'
 import { MentorshipPage } from './pages/MentorshipPage'
 import Projects from './pages/ProjectsPage/Projects'
 import Fundraising from './pages/ProgramsPage/FundraisingPage/Fundraising'
+import FuFit from './pages/FuFit'
 
 export default function App() {
   return (
@@ -30,6 +31,7 @@ export default function App() {
         <Route path="/mentorship" element={<MentorshipPage />} />
         <Route path="/Projects" element={<Projects/>} />
         <Route path="/programs/fundraising" element={<Fundraising/>}/>
+        <Route path="/FuFit" element={<FuFit/>} />
       </Routes>
     </Router>
   )
