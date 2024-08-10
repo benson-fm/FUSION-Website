@@ -5,14 +5,14 @@ import PropTypes from "prop-types";
 function renderTitle(title, subtitle, homeNav) {
   if (homeNav) {
     return (
-      <div className="relative justify-center content-center text-center justify-items-center z-50">
+      <div className="relative justify-center content-center text-center justify-items-center z-50 h-screen">
         <div className="font-karla font-[700] text-2xl leading-9 tracking-[0.12em]">PROGRAMS</div>
         <div className="font-karla font-[800] text-9xl pt-9">FAMILY</div>
       </div>
     );
   } else {
     return (
-      <div className="relative justify-center content-center text-center justify-items-center space-y-12 p-24 z-50">
+      <div className="relative justify-center content-center text-center justify-items-center space-y-12 p-24 z-50 h-screen">
         <div className="text-2xl tracking-[.25em]">{subtitle}</div>
         <div className="text-8xl font-bold tracking-[.25em]">{title}</div>
       </div>

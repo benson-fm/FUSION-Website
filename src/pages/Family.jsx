@@ -6,7 +6,6 @@ import Footer from "../components/Footer";
 import Navbar from "../components/Navbar.jsx";
 import fam_placeholder from '../images/fam_placeholder.png';
 import family_background from '../images/FamilyBackground.png';
-import FamilyNavbar from '../pages/ProgramsPage/FamilyPage/FamilyNavbar.jsx';
 import WhatIsFam from '../pages/ProgramsPage/FamilyPage/WhatIsFam.jsx';
 import OrangeFam from "./ProgramsPage/FamilyPage/OrangeFam.jsx";
 import FamilyGallery from './ProgramsPage/FamilyPage/FamilyGallery.jsx';
