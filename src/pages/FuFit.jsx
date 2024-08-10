@@ -6,6 +6,7 @@ import fufit_basketball from "../images/fufit_basketball.png"
 import fufit_fever from "../images/fufit_fever.png"
 import fufit from "../assets/fufit.png"
 import fufit_destress from "../images/fufit_destress.png"
+import fufit_nutrition from "../images/fufit_nutrition.png"
 import fufit_bg1 from "../assets/fufit_bg1.png"
 import fufit_bg2 from "../assets/fufit_bg2.png"
 import fufit_bg3 from "../assets/fufit_bg3.png"
@@ -39,14 +40,18 @@ export function FuFit() {
             </section>
 
             {/* Get moving */}
-            <section className="w-full h-[540px] flex flex-row" bg={fufit_bg1}>
-                <div className="w-[48%] h-full flex justify-end ">
+            <section className="w-full h-[540px] bg-white flex flex-row relative">
+                <div className="absolute inset-0 z-5">
+                    <img src={fufit_bg1} className="w-full h-[540px] object-cover"></img>
+                </div>
+
+                <div className="w-[48%] h-full flex justify-end relative z-10">
                     <div className="w-[72%] h-full ">
                         <img src={fufit_basketball} className="w-[490px] h-[54%] mt-[20%] "></img>
                     </div>
                 </div>
                 
-                <div className="w-[52%] h-full"> 
+                <div className="w-[52%] h-full relative z-10"> 
                     <div className="w-[64%] h-full flex flex-col ml-[14%]">
                         <div className="w-full h-[76%] bg-[#F4F4F4] mt-10 rounded-t-[60px] rounded-br-[60px]">
                             <div className="w-[85%] ml-[7%]">
@@ -67,8 +72,12 @@ export function FuFit() {
             </section>
 
             {/* bring the heat */}
-            <section className="w-full h-[540px] bg-[#F4F4F4] flex flex-row">
-                <div className="w-[53.5%] h-full">
+            <section className="w-full h-[540px] bg-[#F4F4F4] flex flex-row relative">
+                <div className="absolute inset-0 z-5">
+                    <img src={fufit_bg2} className="w-full h-[540px] object-cover"></img>
+                </div>
+
+                <div className="w-[53.5%] h-full relative z-10">
                     <div className="w-[63%] h-full flex flex-col ml-[22%]">
                         <div className="w-full h-[76%] bg-white mt-10 rounded-b-[60px] rounded-tl-[60px]">
                             <div className="w-[85%] ml-[7%]">
@@ -87,22 +96,26 @@ export function FuFit() {
                     </div>
                 </div>
 
-                <div className="w-[46.5%] h-full">
-                    <div className="w-[72%] h-full">
-                        <img src={fufit_fever} className="w-[490px] h-[54%] mt-[20%] "></img>
+                <div className="w-[46.5%] h-full relative z-10">
+                    <div className="w-[75%] h-full">
+                        <img src={fufit_fever} className="w-[500px] h-[54%] mt-[25%] "></img>
                     </div>
                 </div>
             </section>
 
             {/* destress */}
-            <section className="w-full h-[540px] bg-[#F4F4F4] flex flex-row">
-                <div className="w-[48%] h-full flex justify-end">
+            <section className="w-full h-[540px] bg-[#F4F4F4] flex flex-row relative">
+                <div className="absolute inset-0 z-5">
+                    <img src={fufit_bg3} className="w-full h-[540px] object-cover"></img>
+                </div>
+
+                <div className="w-[48%] h-full flex justify-end relative z-10">
                     <div className="w-[72%] h-full">
                         <img src={fufit_destress} className="w-[500px] h-[55%] mt-[21%] "></img>
                     </div>
                 </div>
                 
-                <div className="w-[52%] h-full"> 
+                <div className="w-[52%] h-full relative z-10"> 
                     <div className="w-[64%] h-full flex flex-col ml-[14%]">
                         <div className="w-full h-[71%] bg-white mt-12 rounded-t-[60px] rounded-br-[60px]">
                             <div className="w-[85%] ml-[7%]">
@@ -122,14 +135,18 @@ export function FuFit() {
             </section>
 
             {/* nutrition */}
-            <section className="w-full h-[540px] bg-white flex flex-row">
-                <div className="w-[53.5%] h-full">
+            <section className="w-full h-[540px] bg-white flex flex-row relative">
+                <div className="absolute inset-0 z-5">
+                    <img src={fufit_bg4} className="w-full h-[540px] object-cover"></img>
+                </div>
+
+                <div className="w-[53.5%] h-full relative z-10">
                     <div className="w-[63%] h-full flex flex-col ml-[22%]">
-                        <div className="w-full h-[65%] bg-[#F4F4F4] mt-20 rounded-b-[60px] rounded-tl-[60px]">
+                        <div className="w-full h-[65%] bg-[#F4F4F4] mt-[15%] rounded-b-[60px] rounded-tl-[60px]">
                             <div className="w-[85%] ml-[7%]">
-                                <h1 className="font-[700] text-[#FAC80A] mt-[7%] tracking-[.1em]">NUTRITION &gt;&gt;</h1>
+                                <h1 className="font-[700] text-[#FFA523] mt-[7%] tracking-[.1em]">NUTRITION &gt;&gt;</h1>
                                 <h1 className="text-black text-3xl font-[700] mt-[3%] ">Nutrition for a Better You</h1>
-                                <hr className="w-16 h-1  bg-[#FAC80A] border-0 rounded mt-[5%]"/>
+                                <hr className="w-16 h-1  bg-[#FFA523] border-0 rounded mt-[5%]"/>
                                 <p className="text-xs text-black mt-[5%] leading-[22px]">Our Nutrition Program empowers members 
                                 to achieve their physical goals while fostering a healthy relationship with food. Learn how to 
                                 maintain a balanced diet on a budget, cook Filipino cuisine with your friends, and explore the 
@@ -141,9 +158,9 @@ export function FuFit() {
                     </div>
                 </div>
 
-                <div className="w-[46.5%] h-full">
-                    <div className="w-[72%] h-full">
-                        <img src={fufit_fever} className="w-[490px] h-[54%] mt-[20%] "></img>
+                <div className="w-[46.5%] h-full relative z-10">
+                    <div className="w-[75%] h-full">
+                        <img src={fufit_nutrition} className="w-[500px] h-[54%] mt-28 "></img>
                     </div>
                 </div>
             </section>
