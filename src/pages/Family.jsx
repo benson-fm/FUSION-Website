@@ -3,6 +3,7 @@
 
 import React from "react";
 import Footer from "../components/Footer";
+import Navbar from "../components/Navbar.jsx";
 import fam_placeholder from '../images/fam_placeholder.png';
 import family_background from '../images/FamilyBackground.png';
 import FamilyNavbar from '../pages/ProgramsPage/FamilyPage/FamilyNavbar.jsx';
@@ -25,8 +26,8 @@ const FamPic = ({ title, image }) => (
 const Family = () => {
     return (
         <div className="flex flex-col"> {/* parent container */}
-            <FamilyNavbar bg={family_background} title="FAMILY" subtitle="PROGRAMS" homeNav={true} className="z-20">
-            </FamilyNavbar>
+            <Navbar bg={family_background} title="FAMILY" subtitle="PROGRAMS" homeNav={true} className="z-20">
+            </Navbar>
              {/* Entire white section 3352*/}
             <WhatIsFam></WhatIsFam>
 
