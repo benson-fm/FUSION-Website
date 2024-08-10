@@ -53,12 +53,14 @@ const OrangeFam = () => {
         <div className='pt-24' ref={ref}>
           <div className="flex items-center justify-center mb-2">
             <div className={`border-t border-[#FAC80A] w-60 border-[2px] mr-2 transition-opacity duration-700 ease-in-out ${isVisible ? 'opacity-100' : 'opacity-0'}`}></div>
-            <h1 className={`text-5xl font-karla font-[700] leading-[52px] text-white transition-opacity duration-700 ease-in-out ${isVisible ? 'opacity-100' : 'opacity-0'}`}>‘23 - ‘24 Fams</h1>
+              <h1 className={`text-5xl font-karla font-[700] leading-[52px] text-white transition-opacity duration-700 ease-in-out ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
+              ‘23 - ‘24 Fams
+              </h1>
             <div className={`border-t border-[#FAC80A] w-60 border-[2px] ml-2 transition-opacity duration-700 ease-in-out ${isVisible ? 'opacity-100' : 'opacity-0'}`}></div>
           </div>
-          <p className={`font-inter mt-4 text-center w-[50rem] font-[400] text-[16px] leading-8 transition-opacity duration-700 ease-in-out ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
-            For the 2023-2024 school year, our Family theme is inspired by the release of the live-action movie "Avatar: The Last Airbender."
-            Each family has been named after a significant character from the series.
+          <p className={`font-inter mt-4 text-center w-[60rem] font-[400] text-[16px] leading-8 transition-opacity duration-700 ease-in-out ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
+          For the 2023-2024 school year, our Family theme is inspired by the release of the live-action movie &quot;Avatar: The <br />Last Airbender.&quot;
+          Each family has been named after a significant character from the series.
           </p>
         </div>
         
