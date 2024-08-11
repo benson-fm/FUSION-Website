@@ -6,7 +6,7 @@ const JoinWorkshops = () => {
     const isVisible = useIsVisible(ref);
 
     return (
-        <div className="bg-white w-full h-[487.5px] flex items-center justify-center py-60">
+        <div className="bg-white w-full h-[487.5px] flex items-center justify-center py-72">
             <div ref={ref} className={`flex flex-col items-center justify-center w-[60rem] h-[30rem] transition-opacity ease-in duration-700 ${isVisible ? "opacity-100" : "opacity-0"}`}>
                 <h1 className="font-karla font-[700] text-5xl text-black pb-3">Boost Your Skills: <span className="text-[#FFA523]">Join Our Workshops</span></h1>
                 <div className="mt-[30px] border-t-4 border-[#FAC80A] w-[10rem]"></div> 
