@@ -157,7 +157,7 @@ export function MeetingsPage() {
                   <div className="carousel-item flex-shrink-0">
                     <img
                       src={MeetingsCarouselPic3}
-                      alt="MeetingsCarouselPic3"
+                      alt="MeetingsCarouselPic3" a
                       className="w-full h-auto object-cover"
                     />
                   </div>
