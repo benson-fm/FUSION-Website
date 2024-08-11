@@ -14,7 +14,7 @@ import mail from "../assets/mail.png";
 const Footer = () => {
   return (
     <footer className="bg-[#0F0A00] text-white pt-16 min-h-[800px] flex flex-col justify-between min-w-full overflow-x-hidden">
-      <div className="flex flex-col lg:flex-row gap-7 md:gap-16 lg:gap-24 xl:gap-36 2xl:gap-48 pt-28 px-28 items-start max-w-full">
+      <div className="flex flex-col lg:flex-row gap-7 md:gap-12 lg:gap-14 xl:gap-16 2xl:gap-24 3xl:gap-48 pt-28 px-28 items-start max-w-full lg:text-md md:text-sm">
         <div className="flex flex-col gap-7 lg:text-md xl:text-xl tracking-[0.2em] text-[#FAC80A]">
           <p className="text-left font-medium">CONTACT US</p>
           <div className="flex flex-row max-w-full gap-2">
@@ -76,9 +76,9 @@ const Footer = () => {
             <input
               type="email"
               placeholder="Email Address"
-              className="placeholder:text-black basis-2/3  h-[50px] bg-[#7D7D7D] rounded-bl-3xl pl-[20px] font-medium"
+              className="placeholder:text-black basis-2/3  h-12 bg-[#7D7D7D] rounded-bl-3xl pl-[20px] font-medium"
             />
-            <button className="bg-[#FAC80A] h-[50px] basis-1/3 rounded-tr-3xl text-black font-medium">
+            <button className="bg-[#FAC80A] h-12 basis-1/3 rounded-tr-3xl text-black font-medium">
               Subscribe
             </button>
           </div>
@@ -92,7 +92,7 @@ const Footer = () => {
               Copyright FUSION 2024
             </p>
           </div>
-          <p className="text-sm text-[#7D7D7D] z-50">Developed by Benson Manzano, Daniela Herrera, Noah Tizon, Arvin Limjoco, Leilani Bascos, Dommenick Lacuata, Arlaghn Cayanan, Ariel Abaincia, Ethan Santos</p>
+          <p className="text-sm text-[#7D7D7D] z-50 text-wrap">Developed by Benson Manzano, Daniela Herrera, Noah Tizon, Arvin Limjoco, Leilani Bascos, Dommenick Lacuata, Arlaghn Cayanan, Ariel Abaincia, Ethan Santos</p>
         </div>
         <img
           src={logo}

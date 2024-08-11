@@ -8,7 +8,7 @@ import joinImage from '../../assets/joinbackground.png';
 
 const Home = () => {
     return (
-        <div className="home w-full mx-auto text-center">
+        <div className="home w-full mx-auto text-center overflow-x-hidden">
             <Navbar bg={joinImage} title="FUSION" subtitle="Fostering Unity and Success In Our Network" homeNav={true}/>
             {/*Our Story*/}
             <OurStorySection></OurStorySection>
