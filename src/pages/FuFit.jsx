@@ -11,6 +11,10 @@ import fufit_bg1 from "../assets/fufit_bg1.png"
 import fufit_bg2 from "../assets/fufit_bg2.png"
 import fufit_bg3 from "../assets/fufit_bg3.png"
 import fufit_bg4 from "../assets/fufit_bg4.png"
+import fufit_shadow1 from "../assets/fufit_shadow1.png"
+import fufit_shadow2 from "../assets/fufit_shadow2.png"
+import fufit_dots1 from "../assets/fufit_dots1.png"
+import fufit_dot1 from "../assets/fufit_dot1.png"
 
 
 
@@ -46,8 +50,9 @@ export function FuFit() {
                 </div>
 
                 <div className="w-[48%] h-full flex justify-end relative z-10">
-                    <div className="w-[72%] h-full ">
+                    <div className="w-[72%] h-full flex justify-end">
                         <img src={fufit_basketball} className="w-[490px] h-[54%] mt-[20%] "></img>
+                        <img src={fufit_dots1} className="w-20 h-16 absolute transform translate-y-[570%] z-20"/>
                     </div>
                 </div>
                 
@@ -66,7 +71,7 @@ export function FuFit() {
                                 an enjoyable part of your routine!</p>
                             </div>
                         </div>
-                        {/* shadow */}
+                        <img src={fufit_shadow1} className="w-64 h-8 mt-5 mx-auto"></img>
                     </div>
                 </div>
             </section>
@@ -92,13 +97,14 @@ export function FuFit() {
                                 with fellow members, and make fitness an enjoyable part of your routine!</p>
                             </div>
                         </div>
-                        {/* shadow */}
+                        <img src={fufit_shadow1} className="w-64 h-8 mt-5 mx-auto"></img>
                     </div>
                 </div>
 
                 <div className="w-[46.5%] h-full relative z-10">
-                    <div className="w-[75%] h-full">
+                    <div className="w-[75%] h-full flex justify-end">
                         <img src={fufit_fever} className="w-[500px] h-[54%] mt-[25%] "></img>
+                        <img src={fufit_dot1} className="w-16 h-16 absolute transform translate-x-[50%] translate-y-[540%] z-20"/>
                     </div>
                 </div>
             </section>
@@ -129,7 +135,7 @@ export function FuFit() {
                                 Join us to relax, connect with fellow members, and enhance your mental and emotional well-being!</p>
                             </div>
                         </div>
-                        {/* shadow */}
+                        <img src={fufit_shadow1} className="w-64 h-8 mt-5 mx-auto"></img>
                     </div>
                 </div>
             </section>
@@ -154,7 +160,7 @@ export function FuFit() {
                                 Filipino culture through food and better your overall nutrition.</p>
                             </div>
                         </div>
-                        {/* shadow */}
+                        <img src={fufit_shadow2} className="w-64 h-8 mt-5 mx-auto"></img>
                     </div>
                 </div>
 
