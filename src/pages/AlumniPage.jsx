@@ -32,7 +32,7 @@ export function AlumniPage() {
             <Navbar title="ALUMNI" subtitle="PROGRAMS" bg={alum_navbar} />
             {/* Give Back and Get Involved */}
             <div className="w-full h-[540px] bg-white flex justify-center items-center">
-                <div className="w-[58%] h-1/2 text-center">
+                <div className="w-1/2 h-1/2 text-center">
                     <div className="font-semibold text-5xl">
                         <span className="text-[#FFA523]">Give Back</span> <span className="text-black">and Get Involved</span>
                     </div>
@@ -50,15 +50,15 @@ export function AlumniPage() {
             </div>
 
             {/* alumni panel pic */}
-            <div className="w-full reletive z-10">
-                <img src={alum_panel}/>
+            <div className="w-full relative z-10">
+                <img src={alum_panel} />
             </div>
 
             {/* alumni scholarship */}
             <div className="w-full h-[540px] bg-[#fff5eb] flex flex-row">
-                <div className="w-[60%] h-full relative">
-                    <div className="w-[62%] h-[76%] bg-white rounded-b-[60px] rounded-tl-[60px] ml-[27%] mt-[10%] z-10 relative border-2 border-white">
-                        <div className="w-[85%] ml-[7%]">
+                <div className="w-3/5 h-full relative">
+                    <div className="w-[34rem] h-[26rem] bg-white rounded-b-[60px] rounded-tl-[60px] ml-[27%] mt-20 z-10 relative border-2 border-white">
+                        <div className="w-[30rem] ml-[7%]">
                             <h1 className="font-[700] text-[#FFA523] mt-[9%] tracking-[.1em]">EMPOWERING FUTURES &gt;&gt;</h1>
                             <h1 className="text-black text-3xl font-[700] mt-[3%] ">Alumni Scholarships for Tomorrow's Leaders</h1>
                             <hr className="w-16 h-1  bg-[#FFA523] border-0 rounded mt-[5%]"/>
@@ -69,12 +69,12 @@ export function AlumniPage() {
                                 opportunity to succeed and make a lasting impact in the STEM fields.</p>
                         </div>
                     </div>
-                    <img src={alum_vector1} className="w-80 h-60 absolute transform translate-y-[-207%] z-0"/>
-                    <img src={alum_circles2} className="w-14 h-16 absolute transform translate-y-[-630%] translate-x-[270%] z-5"/>
+                    <img src={alum_vector1} className="w-80 h-60 absolute top-0 left-0 z-0"/>
+                    <img src={alum_circles2} className="w-14 h-16 absolute transform translate-y-[-640%] translate-x-[270%] z-5"/>
                     <img src={alum_shadow1} className="w-80 h-8 absolute transform translate-x-[101%] translate-y-[50%] z-0"/>
                 </div>
-                <div className="w-[31%] h-full relative">
-                    <img src={fep_award} className="w-[450px] h-[54%] mt-[24%] rounded-bl-[40px] rounded-tr-[40px] z-10 relative"/>
+                <div className="w-2/5 h-full relative">
+                    <img src={fep_award} className="w-[28rem] h-[20rem] mt-[24%] rounded-bl-[40px] rounded-tr-[40px] z-10 relative"/>
                     <img src={alum_circles1} className="w-14 h-24 absolute transform translate-x-[728%] translate-y-[-75%] z-0"/>
                 </div>
                 <div className="flex flex-col flex-grow justify-start items-end">

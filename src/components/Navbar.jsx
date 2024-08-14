@@ -20,8 +20,8 @@ function renderTitle(title, subtitle, homeNav) {
   } else {
     return (
       <div className=" relative justify-center content-center text-center justify-items-center space-y-12 p-24 z-50">
-        <div className="text-8xl font-thin">{title}</div>
         <div className="text-2xl ">{subtitle}</div>
+        <div className="text-8xl font-thin">{title}</div>
       </div>
     );
   }
@@ -29,7 +29,7 @@ function renderTitle(title, subtitle, homeNav) {
 
 function Navbar({ bg, title, subtitle, homeNav = false }) {
   const navigate = useNavigate();
-  
+
   const handleHome = () => {
     navigate("/");
   };
@@ -50,24 +50,24 @@ function Navbar({ bg, title, subtitle, homeNav = false }) {
   };
   return (
     <>
-      <div className='absolute top-0 left-0 right-0 bottom-0 z-10 bg-zinc-800 opacity-60 h-[975px]'></div>
-        <div
-          className="bg-cover p-12 text-white h-[975px]"
-          style={{ backgroundImage: `url(${bg}) ` }}
-        >
-          <div className="relative flex flex-row justify-between z-50">
-            <img className="justify-self-start" src={FUSION} width={200} />
-            <div className="flex justify-self-end space-x-16 text-xl">
-              <button onClick={handleHome}>HOME</button>
-              <button onClick={handleAbout}>ABOUT</button>
-              <button onClick={handleProjects}>PROJECTS</button>
-              <button onClick={handleBoard}>BOARD</button>
-              <button onClick={handlePrograms}>PROGRAMS</button>
-              <button onClick={handleFusionCon}>FUSIONCON</button>
-            </div>
+      <div className="absolute top-0 left-0 right-0 bottom-0 z-10 bg-zinc-800 opacity-60 h-screen"></div>
+      <div
+        className="bg-cover p-12 text-white h-screen"
+        style={{ backgroundImage: `url(${bg}) ` }}
+      >
+        <div className="relative flex flex-row justify-between z-50">
+          <img className="justify-self-start" src={FUSION} width={200} />
+          <div className="flex justify-self-end space-x-16 text-xl">
+            <button onClick={handleHome}>HOME</button>
+            <button onClick={handleAbout}>ABOUT</button>
+            <button onClick={handleProjects}>PROJECTS</button>
+            <button onClick={handleBoard}>BOARD</button>
+            <button onClick={handlePrograms}>PROGRAMS</button>
+            <button onClick={handleFusionCon}>FUSIONCON</button>
           </div>
-          {renderTitle(title, subtitle, homeNav)}
         </div>
+        {renderTitle(title, subtitle, homeNav)}
+      </div>
     </>
   );
 }

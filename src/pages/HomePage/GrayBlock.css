@@ -13,7 +13,7 @@
   align-items: center;
   justify-content: space-between; /* Distribute space between items */
   height: 100%;
-  width: flex;
+  width: auto;
   background: url('../../assets/graybackground.png');
   background-color: #F0F0F0;
   padding: 5rem;
