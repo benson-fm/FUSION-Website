@@ -72,16 +72,16 @@ export function MeetingsPage() {
 
   function QuarterButton({Quarter}){
     if(Quarter === activeQuarter){
-      return(<button className="bg-[#fac80a] uppercase hover:bg-yellow-500 text-black font-bold py-2 px-6" onClick={()=>{setQuarter(Quarter)}}>{Quarter}</button>);
+      return(<button className="bg-[#fac80a] uppercase hover:bg-yellow-500 text-black font-bold py-2 px-6 w-28" onClick={()=>{setQuarter(Quarter)}}>{Quarter}</button>);
     } else {
-      return(<button className="bg-[#F4F4F4] uppercase hover:bg-gray-200 text-[#7D7D7D] font-bold py-2 px-6" onClick={()=>{setQuarter(Quarter)}}>{Quarter}</button>);
+      return(<button className="bg-[#F4F4F4] uppercase hover:bg-gray-200 text-[#7D7D7D] font-bold py-2 px-6 w-28" onClick={()=>{setQuarter(Quarter)}}>{Quarter}</button>);
     }
   }
 
   function RenderMeetings({MeetingList}){
   
     return(
-      <div className="relative overflow-hidden px-72 space-y-24 my-52 bg-white">
+      <div className="relative overflow-hidden px-72 space-y-24 py-32 bg-white">
         <img src={HalfGear} className="absolute right-0"/>
         <div className="flex flex-row justify-between items-center">
           <div>
@@ -118,7 +118,7 @@ export function MeetingsPage() {
   return (
     <div>
       <Navbar title="MEETINGS" subtitle="WEDNESDAYS 7-9 PM" bg={MeetingsBG}/>
-      <div className="flex flex-col items-center justify-center w-full min-h-screen bg-white">
+      <div className="flex flex-col items-center justify-center w-full bg-white">
                 <div className="max-w-[1088px] w-full flex flex-col justify-center items-center gap-10 mt-40">
                     <h1 className="font-karla text-[24px] text-center font-bold leading-[28.06px] tracking-[0.12em]" style={{color: '#7D7D7D'}}>
                         CHECK OUT FUSION
@@ -126,7 +126,7 @@ export function MeetingsPage() {
                     <h1 className="font-karla text-black text-[48px] text-center text-4xl font-bold tracking-[0.05em] mt-10">
                         General Meetings
                     </h1>
-                    <p className="text-center font-inter text-base leading-7 px-24" style={{color: '#3C3C3C'}}>
+                    <p className="text-center font-inter text-base leading-7 px-24 pb-32" style={{color: '#3C3C3C'}}>
                       Each week, FUSION holds general meetings where members can engage with Filipinx culture and enhance 
                       their engineering skills in an enjoyable and accessible way. Join us on Wednesdays from 7-9 PM in the 
                       Dr. White Room at the Cross Cultural Center (CCC). Everyone, regardless of major or background, is welcome 
