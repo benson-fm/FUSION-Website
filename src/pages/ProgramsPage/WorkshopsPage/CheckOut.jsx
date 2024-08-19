@@ -94,7 +94,7 @@ const CheckOut = () => {
 
   return (
     <div
-      className="flex flex-col items-center justify-center p-8"
+      className="flex flex-col items-center justify-center p-8 pb-28"
       style={{ 
         backgroundImage: `url(${CheckOutBackground})`, 
         backgroundSize: 'cover', 
