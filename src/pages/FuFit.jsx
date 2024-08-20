@@ -44,26 +44,26 @@ export function FuFit() {
             </section>
 
             {/* Get moving */}
-            <section className="w-full h-[540px] bg-white flex flex-row relative">
+            <section className="w-full bg-white flex flex-row relative pb-10">
                 <div className="absolute inset-0 z-5">
-                    <img src={fufit_bg1} className="w-full h-[540px] object-cover"></img>
+                    <img src={fufit_bg1} className="max-w-full h-auto object-cover"></img>
                 </div>
 
-                <div className="w-[48%] h-full flex justify-end relative z-10">
+                <div className="w-[48%] flex justify-end relative z-10 ">
                     <div className="w-[72%] h-full flex justify-end">
-                        <img src={fufit_basketball} className="w-[490px] h-[54%] mt-[20%] "></img>
-                        <img src={fufit_dots1} className="w-20 h-16 absolute transform translate-y-[570%] z-20"/>
+                        <img src={fufit_basketball} className="max-w-full h-auto mt-[6.25rem] mb-[7rem]"></img>
+                        <img src={fufit_dots1} className="w-20 h-16 absolute transform translate-y-[600%] z-20"/>
                     </div>
                 </div>
                 
                 <div className="w-[52%] h-full relative z-10"> 
-                    <div className="w-[64%] h-full flex flex-col ml-[14%]">
-                        <div className="w-full h-[76%] bg-[#F4F4F4] mt-10 rounded-t-[60px] rounded-br-[60px]">
+                    <div className="w-[64%] flex flex-col ml-[14%]">
+                        <div className="w-full bg-[#F4F4F4] mt-10 rounded-t-[60px] rounded-br-[60px] pb-14">
                             <div className="w-[85%] ml-[7%]">
                                 <h1 className="font-[700] text-[#FFA523] mt-[7%] tracking-[.1em]">FUSION FIT &gt;&gt;</h1>
                                 <h1 className="text-black text-3xl font-[700] mt-[3%] ">Get Moving and Feel the Momentum</h1>
                                 <hr className="w-16 h-1  bg-[#FFA523] border-0 rounded mt-[5%]"/>
-                                <p className="text-xs text-black mt-[5%] leading-[22px]">Our recreational exercise program provides general members 
+                                <p className="text-xs text-black mt-7 leading-6">Our recreational exercise program provides general members 
                                 an outlet to stay active and healthy. Participate in a variety of activities designed to suit all fitness levels, 
                                 including basketball, volleyball, soccer, flag football, ultimate frisbee, pickleball, kickball, yoga, group workouts, 
                                 and many more. Whether you are looking to work on your fitness goals or simply want to stay active, FUSION Fits have 
@@ -77,19 +77,19 @@ export function FuFit() {
             </section>
 
             {/* bring the heat */}
-            <section className="w-full h-[540px] bg-[#F4F4F4] flex flex-row relative">
+            <section className="w-full bg-[#F4F4F4] flex flex-row relative pb-5">
                 <div className="absolute inset-0 z-5">
-                    <img src={fufit_bg2} className="w-full h-[540px] object-cover"></img>
+                    <img src={fufit_bg2} className="max-w-full h-auto object-cover"></img>
                 </div>
 
                 <div className="w-[53.5%] h-full relative z-10">
-                    <div className="w-[63%] h-full flex flex-col ml-[22%]">
-                        <div className="w-full h-[76%] bg-white mt-10 rounded-b-[60px] rounded-tl-[60px]">
+                    <div className="w-[63%] flex flex-col ml-[22%]">
+                        <div className="w-full bg-white mt-10 rounded-b-[60px] rounded-tl-[60px] pb-9">
                             <div className="w-[85%] ml-[7%]">
                                 <h1 className="font-[700] text-[#FAC80A] mt-[7%] tracking-[.1em]">FUSION FIT &gt;&gt;</h1>
                                 <h1 className="text-black text-3xl font-[700] mt-[3%] ">Bringing the Heat to Every Game</h1>
                                 <hr className="w-16 h-1  bg-[#FAC80A] border-0 rounded mt-[5%]"/>
-                                <p className="text-xs text-black mt-[5%] leading-[22px]">Our recreational exercise program provides general 
+                                <p className="text-xs text-black mt-[5%] leading-6">Our recreational exercise program provides general 
                                 members an outlet to stay active and healthy. Participate in a variety of activities designed to suit all 
                                 fitness levels, including basketball, volleyball, soccer, flag football, ultimate frisbee, pickleball, kickball, 
                                 yoga, group workouts, and many more. Whether you are looking to work on your fitness goals or simply want to 
@@ -101,34 +101,35 @@ export function FuFit() {
                     </div>
                 </div>
 
-                <div className="w-[46.5%] h-full relative z-10">
+                <div className="w-[46.5%] relative z-10">
                     <div className="w-[75%] h-full flex justify-end">
-                        <img src={fufit_fever} className="w-[500px] h-[54%] mt-[25%] "></img>
+                        <img src={fufit_fever} className="max-w-full h-auto mt-[25%] mb-[5.75rem]"></img>
                         <img src={fufit_dot1} className="w-16 h-16 absolute transform translate-x-[50%] translate-y-[540%] z-20"/>
                     </div>
                 </div>
             </section>
+        
 
             {/* destress */}
-            <section className="w-full h-[540px] bg-[#F4F4F4] flex flex-row relative">
+            <section className="w-full bg-[#F4F4F4] flex flex-row relative pb-[1.8rem]">
                 <div className="absolute inset-0 z-5">
-                    <img src={fufit_bg3} className="w-full h-[540px] object-cover"></img>
+                    <img src={fufit_bg3} className="max-w-full h-auto object-cover"></img>
                 </div>
 
-                <div className="w-[48%] h-full flex justify-end relative z-10">
+                <div className="w-[48%] flex justify-end relative z-10">
                     <div className="w-[72%] h-full">
-                        <img src={fufit_destress} className="w-[500px] h-[55%] mt-[21%] "></img>
+                        <img src={fufit_destress} className="max-w-full h-auto mt-28"></img>
                     </div>
                 </div>
                 
                 <div className="w-[52%] h-full relative z-10"> 
-                    <div className="w-[64%] h-full flex flex-col ml-[14%]">
-                        <div className="w-full h-[71%] bg-white mt-12 rounded-t-[60px] rounded-br-[60px]">
+                    <div className="w-[64%] flex flex-col ml-[14%]">
+                        <div className="w-full bg-white mt-12 pb-9 pr-2 rounded-t-[60px] rounded-br-[60px]">
                             <div className="w-[85%] ml-[7%]">
                                 <h1 className="font-[700] text-[#FAC80A] mt-[7%] tracking-[.1em]">DE-STRESS &gt;&gt;</h1>
                                 <h1 className="text-black text-3xl font-[700] mt-[3%] ">Take a Pause: De-stress with FUSION</h1>
-                                <hr className="w-16 h-1  bg-[#FAC80A] border-0 rounded mt-[5%]"/>
-                                <p className="text-xs text-black mt-[5%] leading-[22px]">Our de-stress program is designed to support 
+                                <hr className="w-16 h-1  bg-[#FAC80A] border-0 rounded mt-6"/>
+                                <p className="text-xs text-black mt-5 leading-6">Our de-stress program is designed to support 
                                 the overall well-being of our general members. Participate in relaxing and creative activities such 
                                 as group painting, meditation, origami, slime-making, and other arts and crafts. These workshops offer 
                                 a perfect opportunity to unwind, express creativity, find your outlet, and find balance amidst daily stresses. 
@@ -141,14 +142,14 @@ export function FuFit() {
             </section>
 
             {/* nutrition */}
-            <section className="w-full h-[540px] bg-white flex flex-row relative">
+            <section className="w-full bg-white flex flex-row relative pb-[4.5rem]">
                 <div className="absolute inset-0 z-5">
-                    <img src={fufit_bg4} className="w-full h-[540px] object-cover"></img>
+                    <img src={fufit_bg4} className="max-w-full h-auto object-cover"></img>
                 </div>
 
                 <div className="w-[53.5%] h-full relative z-10">
-                    <div className="w-[63%] h-full flex flex-col ml-[22%]">
-                        <div className="w-full h-[65%] bg-[#F4F4F4] mt-[15%] rounded-b-[60px] rounded-tl-[60px]">
+                    <div className="w-[63%] flex flex-col ml-[22%]">
+                        <div className="w-full bg-[#F4F4F4] mt-[15%] rounded-b-[60px] rounded-tl-[60px] pb-16">
                             <div className="w-[85%] ml-[7%]">
                                 <h1 className="font-[700] text-[#FFA523] mt-[7%] tracking-[.1em]">NUTRITION &gt;&gt;</h1>
                                 <h1 className="text-black text-3xl font-[700] mt-[3%] ">Nutrition for a Better You</h1>
@@ -164,16 +165,16 @@ export function FuFit() {
                     </div>
                 </div>
 
-                <div className="w-[46.5%] h-full relative z-10">
-                    <div className="w-[75%] h-full">
-                        <img src={fufit_nutrition} className="w-[500px] h-[54%] mt-28 "></img>
+                <div className="w-[46.5%] relative z-10">
+                    <div className="w-[75%]">
+                        <img src={fufit_nutrition} className="max-w-full h-auto mt-28 "></img>
                     </div>
                 </div>
             </section>
 
             {/* fufit thing at the bottom */}
             <section className="w-full h-[499px] bg-white">
-                <img src={fufit}/>
+                <img src={fufit} className="max-w-full h-auto"/>
             </section>
 
             <Footer></Footer>
