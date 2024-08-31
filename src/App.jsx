@@ -13,7 +13,7 @@ import { AlumniPage } from './pages/AlumniPage'
 import { MentorshipPage } from './pages/MentorshipPage'
 import Projects from './pages/ProjectsPage/Projects'
 import Fundraising from './pages/ProgramsPage/FundraisingPage/Fundraising'
-
+import Credits from './pages/CreditsPage/Credits'
 export default function App() {
   return (
     <Router>
@@ -30,6 +30,7 @@ export default function App() {
         <Route path="/mentorship" element={<MentorshipPage />} />
         <Route path="/Projects" element={<Projects/>} />
         <Route path="/programs/fundraising" element={<Fundraising/>}/>
+        <Route path="/Credits" element={<Credits/>}/>
       </Routes>
     </Router>
   )
