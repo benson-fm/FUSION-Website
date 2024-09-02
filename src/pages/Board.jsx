@@ -9,7 +9,7 @@ const Board = () => {
     return (
         <>
             <div className="overflow-x-hidden">
-                <Navbar bg={BoardPic} title="Board" subtitle="'24-'25"/>
+                <Navbar bg={BoardPic} title="BOARD" subtitle="'24 - '25"/>
                 <MeetTheTeam />
                 <Executive />
                 <Appointed className='pt-[20px]'/>
