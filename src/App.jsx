@@ -14,9 +14,7 @@ import { MentorshipPage } from './pages/MentorshipPage'
 import Projects from './pages/ProjectsPage/Projects'
 import Fundraising from './pages/ProgramsPage/FundraisingPage/Fundraising'
 import StudyHours from './pages/StudyHours'
-import Workshops from './pages/Workshops'
-import FusionFit from './pages/FusionFit'
-// import Workshops from './pages/ProgramsPage/WorkshopsPage/Workshops.jsx'
+import Workshops from './pages/ProgramsPage/WorkshopsPage/Workshops.jsx'
 
 export default function App() {
   return (
@@ -26,9 +24,7 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/Family" element={<Family />} />
         <Route path="/Internship" element={<Internship />} />
-        <Route path="/Workshops" element={<Workshops />} />
         <Route path="/programs/studyhours" element={<StudyHours />} />
-        <Route path="/FusionFit" element={<FusionFit />} />
         <Route path="/programs" element={<Programs/>} />
         <Route path="/AboutUs" element={<AboutUs />} />
         <Route path="/meetingsPage" element={<MeetingsPage />} />
@@ -37,7 +33,7 @@ export default function App() {
         <Route path="/mentorship" element={<MentorshipPage />} />
         <Route path="/Projects" element={<Projects/>} />
         <Route path="/programs/fundraising" element={<Fundraising/>}/>
-        {/* <Route path="/programs/workshops" element={<Workshops/>}/> */}
+        <Route path="/programs/workshops" element={<Workshops/>}/>
       </Routes>
     </Router>
   )
