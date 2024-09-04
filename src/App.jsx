@@ -14,6 +14,8 @@ import { MentorshipPage } from './pages/MentorshipPage'
 import Projects from './pages/ProjectsPage/Projects'
 import Fundraising from './pages/ProgramsPage/FundraisingPage/Fundraising'
 import Credits from './pages/CreditsPage/Credits'
+import Dummy from './pages/DummyPage/DummyPage'
+
 export default function App() {
   return (
     <Router>
@@ -31,6 +33,7 @@ export default function App() {
         <Route path="/Projects" element={<Projects/>} />
         <Route path="/programs/fundraising" element={<Fundraising/>}/>
         <Route path="/Credits" element={<Credits/>}/>
+        <Route path="/Dummy" element={<Dummy/>}/>
       </Routes>
     </Router>
   )
