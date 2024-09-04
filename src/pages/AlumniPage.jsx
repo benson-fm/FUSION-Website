@@ -25,7 +25,6 @@ import alum_facebook from "../assets/alum_facebook.png";
 import alum_linkedin from "../assets/alum_linkedin.png";
 import alum_email from "../assets/alum_email.png";
 
-
 export function AlumniPage() {
     return (
         <div className="flex flex-col overflow-x-hidden">
