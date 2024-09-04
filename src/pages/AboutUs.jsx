@@ -10,7 +10,6 @@ const PillarBox = ({ title, content }) => (
         </div>
     </div>
 );
-
 const AboutUs = () => {
     return (
         <div className="flex flex-col about-us-container">
