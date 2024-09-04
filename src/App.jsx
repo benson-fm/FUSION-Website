@@ -16,6 +16,7 @@ import Fundraising from './pages/ProgramsPage/FundraisingPage/Fundraising'
 import StudyHours from './pages/StudyHours'
 import Workshops from './pages/Workshops'
 import FusionFit from './pages/FusionFit'
+import FIPPage from './pages/ProjectsPage/FIPPage/FIPPage'
 
 export default function App() {
   return (
@@ -36,7 +37,7 @@ export default function App() {
         <Route path="/mentorship" element={<MentorshipPage />} />
         <Route path="/Projects" element={<Projects/>} />
         <Route path="/programs/fundraising" element={<Fundraising/>}/>
-
+        <Route path="/Projects/FIP" element={<FIPPage/>}/>
       </Routes>
     </Router>
   )
