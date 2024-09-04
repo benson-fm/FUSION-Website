@@ -1,132 +1,191 @@
 import React, { useState } from 'react';
-import Sun from '../assets/sun.png';
-import Gear from '../assets/gear.png';
 import PlaceholderPic from '../assets/placeholderPic.png';
-import Triangle from '../assets/triangle.png';
+import Navbar from "../components/Navbar"
+import Footer from "../components/Footer"
+import ViewMoreButtonVector from "../assets/ViewMoreButtonVector.svg"
+import HalfGear from "../assets/HalfGear.svg"
+import MeetingsBG from "../assets/MeetingsBG.png"
+import MeetingsCarouselPic1 from "../assets/MeetingsCarouselPic1.png"
+import MeetingsCarouselPic2 from "../assets/MeetingsCarouselPic2.png"
+import MeetingsCarouselPic3 from "../assets/MeetingsCarouselPic3.png"
+import MeetingsCarouselPic4 from "../assets/MeetingsCarouselPic4.png"
+import MeetingsCarouselPic5 from "../assets/MeetingsCarouselPic5.png"
+import MeetingsCarouselPic6 from "../assets/MeetingsCarouselPic6.png"
+import MeetingsCarouselBackground from "../assets/MeetingsCarouselBackground.png"
 
-const InfoSection = ({ title, date, pillar, description }) => {
-  return (
+const Meetings = {
+  "Fall":
+    [{key:"a" ,title:"Meeting Title", date:"XX/XX/XX", pillar:"PILLAR",
+    description:"FUSION meetings provide an excellent chance for engineers, Filipinos, and UCI students to connect in a friendly and inclusive setting. Currently, we don't have any meetings ready to showcase, but please check back soon to join in on the fun.",
+    image:PlaceholderPic},
+    {key:"b" ,title:"Meeting Title", date:"XX/XX/XX", pillar:"PILLAR",
+    description:"FUSION meetings provide an excellent chance for engineers, Filipinos, and UCI students to connect in a friendly and inclusive setting. Currently, we don't have any meetings ready to showcase, but please check back soon to join in on the fun.",
+    image:PlaceholderPic}],
+
+  "Winter":[{key:"a" ,title:"Meeting Title", date:"XX/XX/XX", pillar:"PILLAR",
+    description:"FUSION meetings provide an excellent chance for engineers, Filipinos, and UCI students to connect in a friendly and inclusive setting. Currently, we don't have any meetings ready to showcase, but please check back soon to join in on the fun.",
+    image:PlaceholderPic}],
+
+  "Spring":[{key:"a" ,title:"Meeting Title", date:"XX/XX/XX", pillar:"PILLAR",
+    description:"FUSION meetings provide an excellent chance for engineers, Filipinos, and UCI students to connect in a friendly and inclusive setting. Currently, we don't have any meetings ready to showcase, but please check back soon to join in on the fun.",
+    image:PlaceholderPic},
+    {key:"b" ,title:"Meeting Title", date:"XX/XX/XX", pillar:"PILLAR",
+    description:"FUSION meetings provide an excellent chance for engineers, Filipinos, and UCI students to connect in a friendly and inclusive setting. Currently, we don't have any meetings ready to showcase, but please check back soon to join in on the fun.",
+    image:PlaceholderPic},
+    {key:"a" ,title:"Meeting Title", date:"XX/XX/XX", pillar:"PILLAR",
+      description:"FUSION meetings provide an excellent chance for engineers, Filipinos, and UCI students to connect in a friendly and inclusive setting. Currently, we don't have any meetings ready to showcase, but please check back soon to join in on the fun.",
+      image:PlaceholderPic},
+      {key:"b" ,title:"Meeting Title", date:"XX/XX/XX", pillar:"PILLAR",
+      description:"FUSION meetings provide an excellent chance for engineers, Filipinos, and UCI students to connect in a friendly and inclusive setting. Currently, we don't have any meetings ready to showcase, but please check back soon to join in on the fun.",
+      image:PlaceholderPic}]};
+
+
+function Meeting({title, pillar, date, description, image}){
+  return(
     <div className="flex items-center justify-between">
-      <img src={PlaceholderPic} alt="Placeholder Picture" className="w-640 h-362 object-cover flex-shrink-0 mr-10" />
-      <div className="ml-10">
-        <h1 style={{ fontSize: '40px', letterSpacing: '8px', color: 'black' }} className="font-inter font-medium tracking-wider">
+      <img src={image} alt="Placeholder Picture" className="w-1/2 h-auto object-cover" style={{ borderLeftColor: '#FFA523', borderLeftWidth: '36px', borderStyle: 'solid' }}/>
+
+      <div className="w-1/2 ml-10 space-y-4 ">
+        <h1 className="font-karla text-black text-[48px] text-left text-4xl font-bold tracking-[0.05em]">
           {title}
         </h1>
-        <h2 style={{ fontSize: '24px', letterSpacing: '2px', color: 'black' }} className="font-inter font-normal text-left">
-          {date}&nbsp;&nbsp;{pillar}
-        </h2>
-        <p style={{ fontSize: '20px', color: 'black' }} className="font-inter font-normal mt-5 text-left">
+
+        <div className='flex flex-row py-4'>
+          <h2 className="font-karla text-[24px] text-center font-bold leading-[28.06px] tracking-[0.12em]" style={{color: '#FFA523'}}>
+            {pillar}
+          </h2>
+          <h1 className="font-karla text-[24px] text-center font-bold leading-[28.06px] tracking-[0.12em] ml-20" style={{color: '#7D7D7D'}}>
+                  {date}
+          </h1>
+        </div>
+
+        <p className="font-inter text-base leading-7 text-left">
           {description}
         </p>
       </div>
     </div>
   );
-};
+}
 
 export function MeetingsPage() {
-  const [activeTab, setActiveTab] = useState('FALL');
+  const [activeQuarter, setQuarter] = useState("Fall")
 
-  const sections = [
-    {
-      title: "Insert Title Here",
-      date: "XX/XX/XXXX",
-      pillar: "PILLAR",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-    },
-    {
-      title: "Insert Title Here",
-      date: "XX/XX/XXXX",
-      pillar: "PILLAR",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-    },
-    {
-      title: "Insert Title Here",
-      date: "XX/XX/XXXX",
-      pillar: "PILLAR",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-    },
-    {
-      title: "Insert Title Here",
-      date: "XX/XX/XXXX",
-      pillar: "PILLAR",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  function QuarterButton({Quarter}){
+    if(Quarter === activeQuarter){
+      return(<button className="bg-[#fac80a] uppercase hover:bg-yellow-500 text-black font-bold py-2 px-6 w-28" onClick={()=>{setQuarter(Quarter)}}>{Quarter}</button>);
+    } else {
+      return(<button className="bg-[#F4F4F4] uppercase hover:bg-gray-200 text-[#7D7D7D] font-bold py-2 px-6 w-28" onClick={()=>{setQuarter(Quarter)}}>{Quarter}</button>);
     }
-  ];
+  }
 
-  const tabContent = {
-    FALL: sections,
-    WINTER: sections,
-    SPRING: sections,
-  };
-
+  function RenderMeetings({MeetingList}){
+  
+    return(
+      <div className="relative overflow-hidden px-72 space-y-24 py-32 bg-white">
+        <img src={HalfGear} className="absolute right-0"/>
+        <div className="flex flex-row justify-between items-center">
+          <div>
+            <p className="font-[#7D7D7D] text-xl font-semibold">
+              &gt;&gt; ‘24 -‘25
+            </p>
+            <p className="text-5xl font-semibold">
+              {activeQuarter} Quarter Meetings
+            </p>
+          </div>
+          <div>
+            <QuarterButton Quarter="Fall" />
+            <QuarterButton Quarter="Winter" />
+            <QuarterButton Quarter="Spring" />
+          </div>
+        </div>
+        <ul className="space-y-28">
+          {MeetingList[activeQuarter].map((meeting) => (<Meeting title={meeting.title} pillar={meeting.pillar} date={meeting.date} description={meeting.description} image={meeting.image}/>))}
+        </ul>
+        <div className="flex flex-row justify-between items-center">
+            <button className="bg-black text-white font-inter text-xl font-semibold leading-[35px] tracking-widest text-left px-4 py-2 flex items-center justify-between">
+              <span>VIEW MORE</span>
+              <img src={ViewMoreButtonVector} alt="> arrow" className="ml-2 w-3 h-5" />
+            </button>
+            <div>
+              <QuarterButton Quarter="Fall" />
+              <QuarterButton Quarter="Winter" />
+              <QuarterButton Quarter="Spring" />
+            </div>
+        </div>
+      </div>
+    )
+  }
   return (
-    <div className="flex flex-col items-center w-full">
-      <div className="flex flex-col w-full h-screen bg-white">
+    <div>
+      <Navbar title="MEETINGS" subtitle="WEDNESDAYS 7-9 PM" bg={MeetingsBG}/>
+      <div className="flex flex-col items-center justify-center w-full bg-white">
+                <div className="max-w-[1088px] w-full flex flex-col justify-center items-center gap-10 mt-40">
+                    <h1 className="font-karla text-[24px] text-center font-bold leading-[28.06px] tracking-[0.12em]" style={{color: '#7D7D7D'}}>
+                        CHECK OUT FUSION
+                    </h1>
+                    <h1 className="font-karla text-black text-[48px] text-center text-4xl font-bold tracking-[0.05em] mt-10">
+                        General Meetings
+                    </h1>
+                    <p className="text-center font-inter text-base leading-7 px-24 pb-32" style={{color: '#3C3C3C'}}>
+                      Each week, FUSION holds general meetings where members can engage with Filipinx culture and enhance 
+                      their engineering skills in an enjoyable and accessible way. Join us on Wednesdays from 7-9 PM in the 
+                      Dr. White Room at the Cross Cultural Center (CCC). Everyone, regardless of major or background, is welcome 
+                      to participate and have a great time!
+                    </p>
+                </div>
+            </div>
+      <div className="relative w-full h-auto">
+              <img src={MeetingsCarouselBackground} alt="Meetings Carousel Background" className="w-full h-auto object-cover"/>
 
-        <div className="absolute left-0 overflow-hidden z-0" style={{ width: '630.44px', height: '501.67px', top: '1494.52px', left: '-403.37px' }}>
-          <img src={Sun} alt="Sun" style={{ width: '630.44px', height: '501.67px' }} className="object-cover" />
-        </div>
-
-        <div className="relative flex flex-col items-center justify-start">
-          <h1 style={{ fontSize: '40px', letterSpacing: '8px', width: '522px', height: '35px', left: '282px', gap: '0px', opacity: '0px', color: 'black'}} className="font-inter font-medium tracking-wider">GENERAL MEETINGS</h1>
-          <p style={{ fontSize: '20px', width: '1088px', height: '168px', top: '90px', color: 'black'}} className="font-inter font-normal mt-10 text-center">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
-            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt 
-            in culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-        </div>
-
-        <div className="flex items-center justify-center mt-20" style={{top: '1582px', left: '759px'}}>
-          <h1 style={{ fontSize: '40px', letterSpacing: '8px'}} className="font-inter font-medium text-center text-black top-1582px left-[759px] text-[40px] w-[357px] h-[35px]">TERM XX - XX</h1>
-          <img src={Triangle} alt="Triangle" style={{top: '1595px', left: '1145px'}} className="w-16px h-8px mt-5"></img> {/* eventually a dropdown button? */}
-        </div>
-
-        {/* TABS START HERE
-        (can be clicked when zoomed out but content doesnt show even though it was working yesterday, 
-        I know the issue is in one of the div tags and/or the logos but I've been messing with them 
-        and have not found the issue (crying emoji) im so sorry)*/}
-        
-        <div className="flex flex-col items-center justify-start mt-10">
-          <div role="tablist" style={{ width: '462px', height: '35px' }} className="tabs tabs-bordered items-center">
-            <button className={`tab font-inter font-medium text-black ${activeTab === 'FALL' ? 'tab-active' : ''}`} style={{letterSpacing: '2px'}} onClick={() => setActiveTab('FALL')}>
-              FALL
-            </button>
-            <button className={`tab font-inter font-medium text-black ${activeTab === 'WINTER' ? 'tab-active' : ''}`} style={{letterSpacing: '2px'}} onClick={() => setActiveTab('WINTER')}>
-              WINTER
-            </button>
-            <button className={`tab font-inter font-medium text-black ${activeTab === 'SPRING' ? 'tab-active' : ''}`} style={{letterSpacing: '2px'}} onClick={() => setActiveTab('SPRING')}>
-              SPRING
-            </button>
-          </div>
-          
-          <div className="tab-content p-10 text-black">
-            {tabContent[activeTab].map((section, index) => (
-              <InfoSection
-                key={index}
-                title={section.title}
-                date={section.date}
-                pillar={section.pillar}
-                description={section.description}
-              />
-            ))}
-          </div>
-
-          
-        </div>
-      </div>
-
-      <div style={{ position: 'relative', width: '100%', height: '100vh', overflow: 'hidden', marginTop: '-600px' }}>
-        <div className="absolute z-0" style={{ top: '-190px', left: '-10px', width: '600px' }}>
-          <img src={Sun} alt="Sun" style={{ width: '100%', height: 'auto'}} className="object-cover" />
-        </div>
-      </div>
-
-      <div style={{ position: 'relative', width: '100%', height: '100vh', overflow: 'hidden' }}>
-        <div className="absolute z-0" style={{ top: '0', right: '-10px', width: '600px' }}>
-          <img src={Gear} alt="Gear" style={{ width: '100%', height: 'auto'}} className="object-cover" />
-        </div>
-      </div>
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="carousel flex overflow-x-auto">
+                  <div className="carousel-item flex-shrink-0">
+                    <img
+                      src={MeetingsCarouselPic1}
+                      alt="MeetingsCarouselPic1"
+                      className="w-full h-auto object-cover"
+                    />
+                  </div> 
+<div className="carousel-item flex-shrink-0">
+                    <img
+                      src={MeetingsCarouselPic2}
+                      alt="MeetingsCarouselPic2"
+                      className="w-full h-auto object-cover"
+                    />
+                  </div>
+                  <div className="carousel-item flex-shrink-0">
+                    <img
+                      src={MeetingsCarouselPic3}
+                      alt="MeetingsCarouselPic3"
+                      className="w-full h-auto object-cover"
+                    />
+                  </div>
+                  <div className="carousel-item flex-shrink-0">
+                    <img
+                      src={MeetingsCarouselPic4}
+                      alt="MeetingsCarouselPic4"
+                      className="w-full h-auto object-cover"
+                    />
+                  </div>
+                  <div className="carousel-item flex-shrink-0">
+                    <img
+                      src={MeetingsCarouselPic5}
+                      alt="MeetingsCarouselPic5"
+                      className="w-full h-auto object-cover"
+                    />
+                  </div>
+                  <div className="carousel-item flex-shrink-0">
+                    <img
+                      src={MeetingsCarouselPic6}
+                      alt="MeetingsCarouselPic6"
+                      className="w-full h-auto object-cover"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+      <RenderMeetings MeetingList={Meetings}/>
+      <Footer/>
     </div>
   );
 }
