@@ -26,7 +26,7 @@ export default function App() {
         <Route path="/Family" element={<Family />} />
         <Route path="/Internship" element={<Internship />} />
         <Route path="/Workshops" element={<Workshops />} />
-        <Route path="/StudyHours" element={<StudyHours />} />
+        <Route path="/programs/studyhours" element={<StudyHours />} />
         <Route path="/FusionFit" element={<FusionFit />} />
         <Route path="/programs" element={<Programs/>} />
         <Route path="/AboutUs" element={<AboutUs />} />
