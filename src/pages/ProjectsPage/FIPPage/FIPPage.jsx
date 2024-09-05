@@ -3,6 +3,7 @@ import Footer from "../../../components/Footer";
 import FIPBackground from "../../../images/FIPBackground.png";
 import TheFIPProject from "./TheFIPProject";
 import OurProcess from "./OurProcess";
+import DevelopmentProcess from "./DevelopmentProcess";
 const FIPPage = () => {
     return (
         <>
@@ -10,7 +11,7 @@ const FIPPage = () => {
                 <Navbar bg={FIPBackground} title="COMPUTER SCIENCE" subtitle="PROJECTS"/>
                 <TheFIPProject></TheFIPProject>
                 <OurProcess></OurProcess>
-                    
+                <DevelopmentProcess></DevelopmentProcess>
                 <Footer />
             </div>
         </>
