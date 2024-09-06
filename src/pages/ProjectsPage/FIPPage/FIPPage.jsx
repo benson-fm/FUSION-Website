@@ -4,6 +4,7 @@ import FIPBackground from "../../../images/FIPBackground.png";
 import TheFIPProject from "./TheFIPProject";
 import OurProcess from "./OurProcess";
 import DevelopmentProcess from "./DevelopmentProcess";
+import OurCollaborators from "./OurCollaborators";
 const FIPPage = () => {
     return (
         <>
@@ -12,6 +13,7 @@ const FIPPage = () => {
                 <TheFIPProject></TheFIPProject>
                 <OurProcess></OurProcess>
                 <DevelopmentProcess></DevelopmentProcess>
+                <OurCollaborators></OurCollaborators>
                 <Footer />
             </div>
         </>
