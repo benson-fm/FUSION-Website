@@ -15,6 +15,7 @@ import Fundraising from "./pages/ProgramsPage/FundraisingPage/Fundraising";
 import StudyHours from "./pages/StudyHours";
 import Workshops from "./pages/ProgramsPage/WorkshopsPage/Workshops.jsx";
 import FuFit from "./pages/FuFit";
+import FEPPage from "./pages/ProjectsPage/FEPPage/FEPPage"
 
 import Credits from "./pages/CreditsPage/Credits";
 export default function App() {
@@ -37,6 +38,7 @@ export default function App() {
         <Route path="/programs/fufit" element={<FuFit />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/credits" element={<Credits />} />
+        <Route path="/projects/FEP" element={<FEPPage />} />
       </Routes>
     </Router>
   );
