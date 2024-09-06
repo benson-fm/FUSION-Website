@@ -3,8 +3,9 @@ import Footer from "../../../components/Footer";
 import FEPBackground from "../../../images/FEPBackground.png";
 import TheFEPProject from "./TheFEPProject";
 import OurProcess from "./OurProcess";
-import DevelopmentProcess from "./DevelopmentProcess";
+import EngineeringProcess from "./EngineeringProcess";
 import OurCollaborators from "./OurCollaborators";
+import PastProjects from "./OurPastProjects";
 
 const FEPPage = () => {
     return (
@@ -13,8 +14,9 @@ const FEPPage = () => {
                 <Navbar bg={FEPBackground} title="ENGINEERING" subtitle="PROJECTS"/>
                 <TheFEPProject></TheFEPProject>
                 <OurProcess></OurProcess>
-                <DevelopmentProcess></DevelopmentProcess>
+                <EngineeringProcess></EngineeringProcess>
                 <OurCollaborators></OurCollaborators>
+                <PastProjects></PastProjects>
                 <Footer />
             </div>
         </>
