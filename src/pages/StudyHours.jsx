@@ -11,23 +11,16 @@ import studyHoursSection2Image from '../assets/Section2Image.png';
 import studyHoursSection3Image from '../assets/Section3Image.png';
 import StudyHoursTextWhiteBackground from '../assets/StudyHoursTextWhiteBackground.png'
 import StudyHoursTextGreyBackground from '../assets/StudyHoursTextGreyBackground.png'
+import Navbar from "../components/Navbar";
 
 const StudyHours = () => {
     return (
         <>
             <div className="min-h-screen bg-white">
                 <main>
-                    <section className="relative mb-16">
-                        <div className="relative text-center">
-                            <img src={studyHoursBackground} alt="Placeholder" className="mx-auto" />
-                            <div className="absolute inset-0 flex flex-col justify-center items-center">
-                                <p className="text-3xl text-white">PROGRAMS</p>
-                                <h2 className="text-7xl font-bold text-white">STUDY HOURS</h2>
-                            </div>
-                        </div>
-                    </section>
+                <Navbar title="STUDY HOURS" subtitle="PROGRAMS" bg={studyHoursBackground} />
 
-                    <section className="mb-16 text-center">
+                    <section className="text-center py-24">
                         <h2 className="text-4xl font-bold mb-4 text-black">
                             Empower Your <span className="text-[#FFA523]">Learning</span>
                         </h2>
