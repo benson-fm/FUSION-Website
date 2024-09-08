@@ -1,139 +1,102 @@
-import PlaceholderPic from '../assets/placeholderPic.png';
-import YellowPlaceholder from '../assets/yellowPlaceholder.png';
-import Profile from '../assets/Profile.png';
 import Footer from "../components/Footer";
-
+import Navbar from "../components/Navbar";
+import MentorshipHeader from "../images/MentorshipHeader.png"
+import MentorshipInfo from '../images/MentorshipInfo.png';
+import MentorshipBackground from "../images/MentorshipBackground.png"
+import TestimonialQuote from "../assets/TestimonialQuote.png"
+import AarielPic from "../images/AarielPic.png"
+import GericPic from "../images/GericPic.png"
+import MentorshipReveal from "../images/MentorshipReveal.png"
+import RevealPic from "../images/RevealPic.png"
+import MentorQuestion from "../images/MentorQuestion.png"
 
 export function MentorshipPage() {
+    const testimonials = [
+        {
+            Name: "Geric Capili",
+            Quote: "“The mentorship program has provided the perfect opportunity to pass on guidance, knowledge, and support to a new FUSION member. Luckily, this experience has blossomed into one of my favorite friendships, turning a mentee into a lifelong friend.”",
+            Position: "Finish Line Mentor",
+            Image: GericPic,
+            Mirrored: true
+        },
+        {
+            Name: "Aariel Abaincia",
+            Quote: "“My mentor has given unwavering source by helping me pass classes, navigate university life, and try food spots in Irvine.  Joining the FUSION mentorship program has definitely been one of the best decisions I’ve made.”",
+            Position: "Finish Line Mentee",
+            Image: AarielPic,
+            Mirrored: false
+        }
+    ];
     return (
-        <div className="flex flex-col items-center justify-center w-full min-h-screen bg-white p-8 overflow-x-hidden">
-            <div className="w-full flex flex-col justify-center items-center gap-10">
-                <h1 className="text-black text-center font-inter text-4xl font-medium mt-40" style={{ letterSpacing: '8px' }}>
-                    WHAT IS OUR MENTORSHIP PROGRAM?
-                </h1>
-                <p className="text-black text-center font-inter text-base leading-7 px-32">
-                    General members are assigned a mentor during Mentorship Reveal, based on compatibility and majors, though 
-                    not limited exclusively to science and engineering disciplines. Having a mentor provides members with an 
-                    experienced guide, fostering a sense of belonging throughout their college experience.
+        <div className="bg-white">
+            <Navbar title="MENTORSHIP" subtitle="PROGRAMS" bg={MentorshipHeader} />
+
+            <section className="text-center py-36">
+                <h2 className="text-4xl font-bold mb-8 text-black">
+                    What is our <span className="text-[#FFA523]">Mentorship</span> Program?
+                </h2>
+                <div className="h-1 w-36 bg-[#FAC80A] mx-auto mb-8"></div>
+                <p className="max-w-2xl mx-auto text-gray-600">
+                    General members are assigned a mentor during Mentorship Reveal, based on compatibility and majors, though not limited exclusively to science and engineering disciplines. Having a mentor provides members with an experienced guide, fostering a sense of belonging throughout their college experience.
                 </p>
-            </div>
+            </section>
 
-            <div className="grid grid-cols-3 mt-40">
-                {/* First Row */}
-                <div className="flex items-center justify-center">
-                    <img src={PlaceholderPic} alt="Image 1" className="w-640 h-417" />
-                </div>
-                <div className="flex items-center justify-center">
-                <h1 className="text-black text-center font-inter text-4xl font-medium" style={{ letterSpacing: '8px' }}>
-                        GROW
-                    </h1>
-                </div>
-                <div className="flex items-center justify-center">
-                    <img src={PlaceholderPic} alt="Image 2" className="w-640 h-417" />
-                </div>
+            <img src={MentorshipInfo} alt="Placeholder" className="mx-auto" />
 
-                {/* Second Row */}
-                <div className="flex items-center justify-center">
-                    <h1 className="text-black text-center font-inter text-4xl font-medium" style={{ letterSpacing: '8px' }}>
-                        CONNECT
-                    </h1>
-                </div>
-                <div className="flex items-center justify-center">
-                    <img src={PlaceholderPic} alt="Image 3" className="w-640 h-417" />
-                </div>
-                <div className="flex items-center justify-center">
-                    <h1 className="text-black text-center font-inter text-4xl font-medium" style={{ letterSpacing: '8px' }}>
-                        LEARN
-                    </h1>
-                </div>
-            </div>
+            <div className="relative">
+                <img src={MentorshipBackground} alt="Mentorship background" className="w-full h-auto" />
+                <div className="absolute top-0 left-0 right-0 bottom-0 flex flex-col items-center justify-center p-10">
+                    <h2 className="text-6xl py-12 text-white z-10 text-center">
+                        A Word from our <br />
+                        <span className="text-[#FAC80A]">Mentors/Mentees</span>
+                    </h2>
 
-            <div className="max-w-[1274px] w-full flex flex-col justify-center items-center gap-10 mt-40">
-                <h1 className="text-black text-center font-inter text-4xl font-medium" style={{ letterSpacing: '8px' }}>
-                    A WORD FROM OUR MENTORS/MENTEES
-                </h1>
-                <div className="flex items-start max-w-[1270px] w-full h-[413px] mt-4">
-                    <img src={Profile} alt="Profile 1" className="w-[285.49px] h-[307.45px] opacity-1"/>
-                        <div className="ml-8 flex flex-col justify-center">
-                            <p className="text-black font-inter text-2xl leading-7 pl-8 mt-4">
-                                “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
-                                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi."
-                            </p>
-
-                            <div className="flex flex-row mt-40">
-                                <p className="text-black font-inter text-2xl leading-7 pl-8">
-                                    - Lorem Ipsum 
-                                </p>
-                                <p className="text-gray-700 font-inter italic text-2xl leading-7 pl-2">
-                                    Internship Class 
-                                </p>
+                    {testimonials.map((testimonial, index) => (
+                        <div key={index} className={"flex h-80 w-3/5 mx-72 my-4 " + (testimonial.Mirrored ? "flex-row" : "flex-row-reverse")} style={{ backgroundColor: '#7D7D7D' }}>
+                            <div className="basis-3 bg-[#FFA523]"></div>
+                            <img className="basis-1/4 object-cover overflow-hidden h-full w-full" src={testimonial.Image} style={{ aspectRatio: '1 / 1' }} />
+                            <div className="flex-col basis-3/4 p-12 space-y-4 text-white">
+                                <img src={TestimonialQuote} />
+                                <div className="text-lg font">{testimonial.Quote}</div>
+                                <div className="text-xl font-semibold">
+                                    {testimonial.Name}
+                                    <div className="text-white font-light text-lg">
+                                        {testimonial.Position}
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                </div>
+                    ))}
 
-                <div className="flex items-start max-w-[1270px] w-full h-[413px] mt-4">
-                    <div className="ml-8 flex flex-col justify-center">
-                        <p className="text-black font-inter text-2xl leading-7 pr-8 mt-4">
-                            “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
-                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi."
-                        </p>
 
-                        <div className="flex flex-row mt-40 justify-end">
-                            <p className="text-black font-inter text-2xl leading-7 pr-2">
-                                - Lorem Ipsum 
-                            </p>
-                            <p className="text-gray-700 font-inter italic text-2xl leading-7 pr-10">
-                                Internship Class 
-                            </p>
-                        </div>
-                    </div>
-                    <img src={Profile} alt="Profile 1" className="w-[285.49px] h-[307.45px] opacity-1"/>
                 </div>
             </div>
 
-            <h1 className="text-black text-center font-inter text-4xl font-medium" style={{ letterSpacing: '8px' }}>
-                WANT TO BECOME  A MENTOR OR MENTEE?
-            </h1>
-
-            <button className="text-black font-inter text-xl font-medium leading-9 text-center py-5 px-10 border-4 border-black bg-yellow-400 hover:bg-yellow-500 focus:outline-none  mt-20"
-                style={{
-                    width: '306px',
-                    height: '92px',
-                    top: '4325px',
-                    left: '801px',
-                    padding: '20px 36px',
-                    gap: '10px',
-                    opacity: '1',
-                    letterSpacing: '4px'
-                }}
-            >
-                APPLY HERE
-            </button>
-
-            <div className="relative w-[1920px] h-[1120px] mt-40 flex items-center justify-center mt-60">
-                <img src={YellowPlaceholder} alt="Yellow Placeholder" className="absolute top-0 left-0 w-[1920px] h-[1120px] opacity-1"/>
-    
-                <div className="absolute text-center">
-                    <h1 className="text-black font-inter text-4xl font-medium" style={{ letterSpacing: '8px' }}>
-                        23-24 MENTORSHIP REVEAL
-                    </h1>
-                    <img src={PlaceholderPic} alt="Image 1" className="w-[1274px] h-[758px] mt-10"/>
-                    <button className="text-black font-inter text-xl font-medium text-center border-4 border-black bg-yellow-400 hover:bg-yellow-500 focus:outline-none  mt-20"
-                        style={{
-                            width: '367px',
-                            height: '69px',
-                            top: '996px',
-                            left: '801778px',
-                            padding: '20px 36px 20px 36px',
-                            gap: '10px',
-                            opacity: '1',
-                            letterSpacing: '4px'
-                        }}
-                    >
-                        SEE FULL GALLERY
+            <div className="relative text-center" style={{ position: 'relative' }}>
+                <img src={MentorshipReveal} alt="Background" className="w-full h-auto" />
+                <div className="absolute inset-0 flex flex-col items-center justify-start pt-10">
+                    <h1 className="text-xl font-normal text-[#7D7D7D]">MEMORIES IN FRAMES</h1>
+                    <h2 className="text-3xl font-bold text-black">Mentorship Reveal</h2>
+                    <img src={RevealPic} alt="Placeholder" className="w-1/2 mt-10 mb-10" />
+                    <button className="bg-black text-white font-light py-2 px-6 mt-4">
+                        BROWSE GALLERY &gt;
                     </button>
                 </div>
             </div>
+
+            <div className="relative text-center">
+                <img src={MentorQuestion} alt="Mentorship Background" className="w-full h-auto" />
+                <div className="absolute inset-0 flex flex-col items-center justify-center p-12">
+                    <h1 className="text-xl font-normal mb-8" style={{ color: '#FAC80A' }}>WANT TO BECOME A MENTOR/MENTEE?</h1>
+                    <h2 className="text-4xl font-semibold text-white mb-12">
+                        Apply to our FUSION <br /> Mentorship Program Below!
+                    </h2>
+                    <button className="bg-[#FAC80A] text-black font-semibold py-4 px-16 text-2xl">
+                        APPLY HERE &gt;
+                    </button>
+                </div>
+            </div>
+
 
             <Footer />
         </div>
