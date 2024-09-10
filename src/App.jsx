@@ -16,8 +16,9 @@ import StudyHours from "./pages/StudyHours";
 import Workshops from "./pages/ProgramsPage/WorkshopsPage/Workshops.jsx";
 import FuFit from "./pages/FuFit";
 import FEPPage from "./pages/ProjectsPage/FEPPage/FEPPage"
-
 import Credits from "./pages/CreditsPage/Credits";
+import FIPPage from './pages/ProjectsPage/FIPPage/FIPPage'
+
 export default function App() {
   return (
     <Router>
@@ -39,6 +40,7 @@ export default function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/credits" element={<Credits />} />
         <Route path="/projects/FEP" element={<FEPPage />} />
+        <Route path="/Projects/FIP" element={<FIPPage/>}/>
       </Routes>
     </Router>
   );
