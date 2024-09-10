@@ -18,6 +18,7 @@ import FuFit from "./pages/FuFit";
 import FEPPage from "./pages/ProjectsPage/FEPPage/FEPPage"
 import Credits from "./pages/CreditsPage/Credits";
 import FIPPage from './pages/ProjectsPage/FIPPage/FIPPage'
+import Dummy from './pages/DummyPage/DummyPage'
 
 export default function App() {
   return (
@@ -41,6 +42,7 @@ export default function App() {
         <Route path="/credits" element={<Credits />} />
         <Route path="/projects/FEP" element={<FEPPage />} />
         <Route path="/Projects/FIP" element={<FIPPage/>}/>
+        <Route path="/Dummy" element={<Dummy/>}/>
       </Routes>
     </Router>
   );
