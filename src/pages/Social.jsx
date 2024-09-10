@@ -70,7 +70,7 @@ export default function Social() {
                     <div className="max-w-[1088px] w-full flex flex-col gap-10 relative">
                         <div className="w-1/2 h-2/3 p-[44px_0_0_0] gap-[32px] rounded-[72px_0px_72px_72px] bg-[#F4F4F4] flex-shrink-0 z-10 left-1/4 mt-20 relative"> 
                             <h1 className="font-karla text-[24px] font-bold leading-[28.06px] tracking-[0.12em] text-left ml-10" style={{color: '#FFA523'}}>
-                                GAMING >>
+                                GAMING
                             </h1>
                             <h1 className="text-black text-left font-karla text-4xl font-bold ml-10 mr-20 mt-5">
                                 FUSION Frenzy: Play, Compete, and Collaborate
@@ -94,7 +94,7 @@ export default function Social() {
                         <img src={FtekPic} alt={`F-Tek Dance Workshop`} className="w-2/3 h-auto object-cover flex-shrink-0 absolute left-1/4 top-60 z-10"/>
                         <div className="w-2/3 h-1/2 p-[44px_0_0_0] gap-[32px] rounded-[72px_72px_72px_0] bg-white flex-shrink-0 absolute left-full top-40 z-10"> 
                             <h1 className="font-karla text-[24px] font-bold leading-[28.06px] tracking-[0.12em] text-left w-[478px] h-[28px] ml-10" style={{color: '#FFA523'}}>
-                                F-TEK >>
+                                F-TEK
                             </h1>
                             <h1 className="text-black text-left font-karla text-4xl font-bold ml-10 mr-44 mt-5">
                                 Groove Into the Future: F-Tek Dance Workshops

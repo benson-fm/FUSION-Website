@@ -24,31 +24,44 @@ import WhyInternRectangle3 from "../assets/WhyInternRectangle3.png"
 import BorderDetails1 from "../assets/BorderDetails1.svg"
 import BorderDetails2 from "../assets/BorderDetails2.svg"
 import YellowDiamond from "../assets/YellowDiamond.svg"
+import { Reveal } from "../lib/Reveal.jsx"
 
 const Internship = () => {
     return (
         <>
             <Navbar title="INTERNSHIP" subtitle="PROGRAMS" bg={HeaderBG}/>
-            <div className="my-40 mx-72 space-y-12 justify-center text-center bg-white">
-                <div className="font-semibold text-5xl">
-                    <span className="text-[#FFA523] ">Intern</span> with FUSION!
-                </div>
-                <hr className="w-48 h-1 mx-auto my-4 bg-[#FAC80A] border-0 rounded"/>
-                <div className="text-xl">
-                    Our 10-week internship program enables interns to shadow three board positions of their choice. The first six weeks <br/>
-                    involve rotating through these roles, followed by a focus on one preferred position during the final four weeks, <br/>
-                    culminating in an intern-led general meeting in the last week. Interns are expected to attend both general meetings <br/>
-                    and board meetings throughout the program.
-                </div>
+            <div className="flex flex-col w-full h-[30.46875rem] justify-center items-center bg-white px-8">
+                <Reveal>
+                    <div>
+                        {/* Title */}
+                        <div className="font-karla font-[600] text-[3rem] leading-[3.25rem] text-center text-black pb-8">
+                            <span className="text-[#FFA523]">Intern</span> with FUSION!
+                        </div>
+
+                        {/* Yellow Divider Line */}
+                        <div className="my-6">
+                            <hr className="w-24 h-1 mx-auto bg-[#FAC80A] border-0 rounded"/>
+                        </div>
+
+                        {/* Description */}
+                        <div className="text-center font-inter text-[1rem] leading-8 text-[#3C3C3C] w-[57.5rem] pt-8">
+                            Our 10-week internship program enables interns to shadow three board positions of their choice. 
+                            The first six weeks involve rotating through these roles, followed by a focus on one preferred position 
+                            during the final four weeks, culminating in an intern-led general meeting in the last week. Interns are expected 
+                            to attend both general meetings and board meetings throughout the program.
+                        </div>
+                    </div>
+                </Reveal>
             </div>
+
             <div className="relative bg-[#F4F4F4] py-32">
-                <div className="text-center text-4xl font-bold tracking-wide py-14">
+                <div className="text-center text-[2rem] font-[700] tracking-[0.12rem] py-14 leading-[2.338125rem] text-[#0F0A00]">
                     <span className="text-[#7D7D7D]">&lt;&lt;</span> INTERN DUTIES <span className="text-[#7D7D7D]" >&gt;&gt;</span>
                 </div>
                 <div className="relative flex w-3/4 mx-auto flex-row justify-center space-x-10 z-10">
                     <div className="flex flex-col w-1/4 bg-white text-center p-8 space-y-4 rounded-tl-[80px]">
                         <img src={Gear} className="w-1/2 mx-auto"/>
-                        <div className="text-3xl font-bold">
+                        <div className="text-[2rem] font-karla font-[600] leading-[2.338125rem] text-black">
                             Support
                         </div>
                         <img src={Divider} className="w-1/8 mx-auto"/>
@@ -59,7 +72,7 @@ const Internship = () => {
                     </div>
                     <div className="flex flex-col w-1/4 bg-white text-center p-8 space-y-4">
                         <img src={SunGear} className="w-1/2 mx-auto"/>
-                        <div className="text-3xl font-bold">
+                        <div className="text-[2rem] font-karla font-[600] leading-[2.338125rem] text-black">
                             Innovate
                         </div>
                         <img src={Divider} className="w-1/8 mx-auto"/>
@@ -70,7 +83,7 @@ const Internship = () => {
                     </div>
                     <div className="flex flex-col w-1/4 bg-white text-center p-8 space-y-4 rounded-br-[80px]">
                         <img src={Sun} className="w-1/2 mx-auto"/>
-                        <div className="text-3xl font-bold">
+                        <div className="text-[2rem] font-karla font-[600] leading-[2.338125rem] text-black">
                             Organize
                         </div>
                         <img src={Divider} className="w-1/8 mx-auto"/>
@@ -86,7 +99,7 @@ const Internship = () => {
                 <img src={Dots1} className="absolute top-48 right-44"/>
             </div>
             <div className="flex flex-col relative space-y-4 py-40 bg-white items-center">
-                <div className="text-center text-5xl font-semibold pb-16">
+                <div className="text-center text-5xl font-semibold pb-16 text-[#0F0A00]">
                     <span className="text-[#FAC80A] text-6xl font-bold">?</span> <span className="text-[#FFA523] text-8xl font-bold">?</span> <span className="text-[#FAC80A] text-6xl font-bold">?</span>
                     <br/>
                     Why Intern for FUSION
@@ -141,10 +154,11 @@ const Internship = () => {
                     <div className="text-[#7D7D7D] text-2xl font-semibold tracking-wider">
                         EAGER TO COLLABORATE AND CONNECT?
                     </div>
-                    <div className="text-5xl font-semibold">
+                    <div className="text-5xl font-semibold text-black">
                         Apply to our FUSION <br/>
                         Internship Program Below!
                     </div>
+                    {/* Put link for application here */}
                     <button className="bg-[#FFA523] text-white text-2xl font-semibold  py-4 px-10 tracking-widest"> APPLY HERE ❯</button>
                 </div>
                 <div className="relative basis-1/4">
