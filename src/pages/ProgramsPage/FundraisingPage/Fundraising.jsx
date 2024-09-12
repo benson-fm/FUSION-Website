@@ -9,19 +9,21 @@ import DollarSign1 from "../../../assets/DollarSign1.png"
 import DollarSign2 from "../../../assets/DollarSign2.png"
 import Hexagon1 from "../../../assets/Hexagon1.png"
 import Hexagon2 from "../../../assets/Hexagon2.png"
-
-
+import {Reveal} from "../../../lib/Reveal";
+import Alexa from "../../../images/Alexa.png";
+import Bernard from "../../../images/Bernard.png";
 
 const Fundraising = () => {
     return(
         <>
         <Navbar title="FUNDRAISING" subtitle="PROGRAMS" bg={HeaderBG}/>
         <div className="my-40 mx-72 justify-center text-center">
-            <div className="font-semibold text-5xl">
+            <Reveal>
+            <div className="font-karla font-semibold leading-[3.25rem] text-5xl pb-8">
                 How do we <span className="text-[#FFA523] ">Fundraise</span>?
             </div>
             <hr className="w-48 h-1 mx-auto my-4 bg-[#FAC80A] my-10 border-0 rounded"/>
-            <div>
+            <div className="pt-8 font-inter font-[300] text-[1rem] leading-[2rem]">
                 Bacon-Wrapped Hot Dogs (BWHD): FUSION’s most popular on-campus fundraiser. Come find us on Ring Road 
                 throughout the quarter to buy a Bacon-Wrapped Hot Dog or stop by for good vibes!
                 <br/>
@@ -29,6 +31,7 @@ const Fundraising = () => {
                 Off-Campus Fundraisers: These include fundraisers with off-campus restaurants such as Cha, 7Leaves, Wingstop, and Jollibee.
                  Off-campus fundraisers are a great way to meet and hang out with members in FUSION!
             </div>
+            </Reveal>
         </div>
         <div className="bg-no-repeat bg-cover bg-center flex justify-center px-72"   
         style={{ backgroundImage: `url(${BWHDBG})` }}>
@@ -49,21 +52,18 @@ const Fundraising = () => {
                 </div>
                 <div className="space-y-4">
                     <Testimonial 
-                        Name="Full Name" 
-                        Quote="“Lorem ipsum dolor sit amet, consectetur adipiscing 
-                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi anal penis.”"
-                        Position="Position"
-                        Image={BWHD}
+                        Name="Alexa Ancheta" 
+                        Quote="“Fundraisers are one of my favorite parts of FUSION. I love grabbing food and hanging out with my FUSION friends at BWHD or off-campus! If you want to get to know more people in FUSION, coming out to fundraisers is a great tactic.”"
+                        Position="Fundraising Co-Director ‘24-’25"
+                        Image={Alexa}
+                        Mirrored={true}
                         />
                     <Testimonial 
-                        Name="Full Name" 
-                        Quote="“Lorem ipsum dolor sit amet, consectetur adipiscing 
-                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi anal penis.”"
-                        Position="Position"
-                        Image={BWHD}
-                        Mirrored={true}
+                        Name="Bernard Tillano" 
+                        Quote="“As Fundraising Director and an Aerospace Engineering major, I have expanded my skill set beyond engineering, learning valuable lessons in communication, scheduling, and collaboration with off-campus companies!”"
+                        Position="Fundraising Co-Director ‘24-’25"
+                        Image={Bernard}
+                        Mirrored={false}
                         />
                 </div>
             </div>
