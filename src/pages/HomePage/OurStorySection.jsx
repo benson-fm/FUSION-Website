@@ -1,33 +1,40 @@
-import './OurStorySection.css';
 import yellowDownArrow from '../../assets/yellowdownarrow.png';
+import dots from '../../assets/dots.png';
+import triangle from '../../assets/triangle.png';
 
 const OurStorySection = () => {
   return (
-    <div className="fixed-dimensions relative bg-white flex flex-col justify-center items-center py-16 px-8">
-      <div className="background-elements">
-        <div className="dots-left"></div>
-        <div className="dots-right"></div>
-        <div className="triangle-top-right"></div>
-        <div className="triangle-bottom-left"></div>
-      </div>
-      <div className="max-w-4xl text-center relative">
-        <div className="mb-4">
-          <div className="flex items-center justify-center space-x-2">
-            <span className="w-[115px] h-1 bg-yellow-500"></span>
-            <span className="text-black font-bold uppercase tracking-wide karla-font">Our Story</span>
-            <span className="w-[115px] h-1 bg-yellow-500"></span>
-          </div>
+    <div className="relative bg-[#FFFFFF] py-32 flex flex-col items-center justify-center overflow-hidden">
+      {/* Background elements */}
+      <img src={dots} className="absolute bottom-[9rem] left-[-1rem]" />
+      <img src={triangle} className="absolute bottom-0 left-0 w-[13.043125rem] h-[12.918125rem] rotate-180" />
+      <img src={triangle} className="absolute top-0 right-0 w-[13.043125rem] h-[12.918125rem]" />
+      <img src={dots} className="absolute top-[10.5rem] right-[-2rem]" />
+
+      {/* Content section */}
+      <div className="relative max-w-4xl text-center z-10">
+        {/* Section Title */}
+        <div className="mb-4 flex items-center justify-center space-x-2">
+          <span className="w-[115px] h-1 bg-[#FAC80A]"></span>
+          <span className="text-black font-bold uppercase tracking-wide font-karla px-8">Our Story</span>
+          <span className="w-[115px] h-1 bg-[#FAC80A]"></span>
         </div>
-        <h2 className="text-4xl font-semibold text-black mb-6 karla-font  ">
-          A direct network between <span className="text-yellow-500">Filipinx</span> and <br /><span className="text-yellow-500">engineers</span> at UC Irvine.
+
+        {/* Heading and Subtext */}
+        <h2 className="text-4xl font-semibold text-black mb-6 font-karla">
+          A network connecting the <span className="text-[#FF9D10]">Filipinx</span> community and <br />
+          <span className="text-[#FF9D10]">STEM</span> at UC Irvine.
         </h2>
-        <p className="text-gray-700 mb-6 inter-font pb-10">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+        <p className="text-gray-700 mb-6 font-inter pb-10">
+          Join FUSION, where ambition meets innovation. We’re a vibrant community empowering Filipinx students and aspiring professionals in Science, Technology, Engineering, and Mathematics (STEM) at UC Irvine. Through our five pillars—Support, Professionalism, Academics, Culture, and Science-Engineering—we foster excellence and provide unparalleled opportunities for growth.
         </p>
+
+        {/* Call to Action */}
         <div className="mt-8 flex flex-col items-center pt-20">
-          <p className="text-lg font-bold text-black karla-font">WHY JOIN?</p>
+          <p className="text-lg font-bold text-black font-karla">WHY JOIN?</p>
           <button>
-          <img src={yellowDownArrow} alt="Yellow Down Arrow" className="mt-2 yellow-arrow-hover" /> 
+            <img src={yellowDownArrow} alt="Yellow Down Arrow" className="mt-2 hover:bg-yellow-500" />
           </button>
         </div>
       </div>
