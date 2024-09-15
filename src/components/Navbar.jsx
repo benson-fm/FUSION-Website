@@ -1,7 +1,7 @@
 import FUSION from "../assets/FUSIONSunGear.png";
 import { useNavigate } from "react-router-dom";
 import PropTypes from "prop-types";
-
+import Scroll from "../lib/Scroll"
 function renderTitle(title, subtitle, homeNav) {
   if (homeNav) {
     return (
@@ -12,9 +12,11 @@ function renderTitle(title, subtitle, homeNav) {
           <span className="font-extrabold font-karla">FUSION</span>
         </div>
         {/* Not sure where to route this to yet, just useless for now */}
+        <Scroll targetId={'our-story-section'} duration={850}>
         <button className="bg-[#fac80a] hover:bg-yellow-500 text-black font-bold py-2 px-6 w-48 tracking-widest">
           LEARN MORE
         </button>
+        </Scroll>
       </div>
     );
   } else {

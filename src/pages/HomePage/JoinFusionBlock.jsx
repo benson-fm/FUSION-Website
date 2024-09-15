@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import joinBackground from '../../images/joinbackground.png';
+import { Reveal } from '../../lib/Reveal';
 
 const JoinFusionBlock = () => {
   // State to track hover
@@ -28,6 +29,7 @@ const JoinFusionBlock = () => {
 
       {/* Content */}
       <div className="relative z-20 flex flex-col justify-center items-center">
+        <Reveal duration={1500}>
         <p className="text-lg font-bold mb-2 tracking-widest whitespace-nowrap font-inter text-black">
           INTERESTED?
         </p>
@@ -37,6 +39,7 @@ const JoinFusionBlock = () => {
         <p className="text-lg font-bold mb-8 tracking-widest whitespace-nowrap font-inter text-black">
           WE ARE ALWAYS OPEN TO MORE PEOPLE JOINING US!
         </p>
+        </Reveal>
         <button
           className="bg-[#FFA523] hover:bg-[#FFD700] text-white font-inter font-[600] text-[1.5rem] leading-[2.1875rem] tracking-[0.16em] py-2 px-8 border-none cursor-pointer rounded-bl-[25px] rounded-tr-[25px] transition-colors duration-300"
           onMouseEnter={() => setIsHovered(true)}

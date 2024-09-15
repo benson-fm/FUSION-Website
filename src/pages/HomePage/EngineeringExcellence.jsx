@@ -2,9 +2,9 @@ import { Link } from 'react-router-dom';
 import EngineeringHubPic from '../../images/EngineeringHubPic.png'; // Adjust the path as needed
 import {Reveal} from '../../lib/Reveal.jsx';
 
-const OrangeWhiteBlock = () => {
+const EngineeringExcellence = () => {
   return (
-    <div className="grid grid-cols-[60%_40%] h-[41rem] relative bg-white">
+    <div id='engineering-excellence' className="grid grid-cols-[60%_40%] h-[41rem] relative bg-white">
       {/* White Container */}
       <div className="flex justify-center items-center p-8 md:p-16 z-1">
         <Reveal>
@@ -36,4 +36,4 @@ const OrangeWhiteBlock = () => {
   );
 };
 
-export default OrangeWhiteBlock;
+export default EngineeringExcellence;

@@ -4,11 +4,11 @@ import dots from '../../assets/dots.png';
 import triangle from '../../assets/triangle.png';
 import BounceAnimation from '../../lib/Bounce.jsx';
 import Scroll from '../../lib/Scroll.jsx'; 
-import {Reveal} from '../../lib/Reveal.jsx';
+import { Reveal } from '../../lib/Reveal.jsx';
 
 const OurStorySection = () => {
   return (
-    <div className="relative bg-[#FFFFFF] py-32 flex flex-col items-center justify-center overflow-hidden">
+    <div id='our-story-section' className="relative bg-[#FFFFFF] py-32 flex flex-col items-center justify-center overflow-hidden">
       {/* Background elements */}
       <img src={dots} className="absolute bottom-[9rem] left-[-1rem]" />
       <img src={triangle} className="absolute bottom-0 left-0 w-[13.043125rem] h-[12.918125rem] rotate-180" />
@@ -17,7 +17,7 @@ const OurStorySection = () => {
 
       {/* Content section */}
       <div className="relative max-w-4xl text-center z-10">
-        <Reveal>
+        <Reveal duration={1500}>
         {/* Section Title */}
         <div className="mb-4 flex items-center justify-center space-x-2">
           <span className="w-[115px] h-1 bg-[#FAC80A]"></span>
@@ -39,7 +39,7 @@ const OurStorySection = () => {
         <div className="mt-8 flex flex-col items-center pt-20">
           <p className="text-lg font-bold text-black font-karla">WHY JOIN?</p>
           <BounceAnimation>
-            <Scroll targetId="navbar-home-section">
+            <Scroll targetId="engineering-excellence" duration={850}>
               <img src={yellowDownArrow} alt="Yellow Down Arrow" className="mt-2" />
             </Scroll>
           </BounceAnimation>

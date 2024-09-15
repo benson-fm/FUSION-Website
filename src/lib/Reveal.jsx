@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from "react";
 import { useIsVisible } from "./useIsVisible"; // Adjust the import path as needed
 
-export const Reveal = ({ children, width = "fit-content" }) => {
+export const Reveal = ({ children, width = "fit-content", duration = 500 }) => {
   const { ref, isIntersecting } = useIsVisible({ triggerOnce: true });
   const [isVisible, setIsVisible] = useState(false);
 
@@ -16,10 +16,13 @@ export const Reveal = ({ children, width = "fit-content" }) => {
   return (
     <div
       ref={ref}
-      className={`transition-all duration-500 ease-out ${
-        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-      }`}
-      style={{ position: "relative", width, overflow: "hidden" }}
+      className={`transition-all ease-out ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
+      style={{ 
+        transitionDuration: `${duration}ms`, // Set the duration dynamically
+        position: "relative",
+        width,
+        overflow: "hidden"
+      }}
     >
       {children}
     </div>
