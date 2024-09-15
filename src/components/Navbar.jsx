@@ -2,6 +2,8 @@ import FUSION from "../assets/FUSIONSunGear.png";
 import { useNavigate } from "react-router-dom";
 import PropTypes from "prop-types";
 import Scroll from "../lib/Scroll"
+import { Reveal } from "../lib/Reveal";
+
 function renderTitle(title, subtitle, homeNav) {
   if (homeNav) {
     return (
