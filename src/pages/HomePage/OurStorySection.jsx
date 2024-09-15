@@ -1,6 +1,10 @@
+import React from 'react';
 import yellowDownArrow from '../../assets/yellowdownarrow.png';
 import dots from '../../assets/dots.png';
 import triangle from '../../assets/triangle.png';
+import BounceAnimation from '../../lib/Bounce.jsx';
+import Scroll from '../../lib/Scroll.jsx'; 
+import {Reveal} from '../../lib/Reveal.jsx';
 
 const OurStorySection = () => {
   return (
@@ -13,6 +17,7 @@ const OurStorySection = () => {
 
       {/* Content section */}
       <div className="relative max-w-4xl text-center z-10">
+        <Reveal>
         {/* Section Title */}
         <div className="mb-4 flex items-center justify-center space-x-2">
           <span className="w-[115px] h-1 bg-[#FAC80A]"></span>
@@ -29,13 +34,15 @@ const OurStorySection = () => {
         <p className="text-gray-700 mb-6 font-inter pb-10">
           Join FUSION, where ambition meets innovation. We’re a vibrant community empowering Filipinx students and aspiring professionals in Science, Technology, Engineering, and Mathematics (STEM) at UC Irvine. Through our five pillars—Support, Professionalism, Academics, Culture, and Science-Engineering—we foster excellence and provide unparalleled opportunities for growth.
         </p>
-
+        </Reveal>
         {/* Call to Action */}
         <div className="mt-8 flex flex-col items-center pt-20">
           <p className="text-lg font-bold text-black font-karla">WHY JOIN?</p>
-          <button>
-            <img src={yellowDownArrow} alt="Yellow Down Arrow" className="mt-2 hover:bg-yellow-500" />
-          </button>
+          <BounceAnimation>
+            <Scroll targetId="navbar-home-section">
+              <img src={yellowDownArrow} alt="Yellow Down Arrow" className="mt-2" />
+            </Scroll>
+          </BounceAnimation>
         </div>
       </div>
     </div>

@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import ScrollToTop from "./lib/ScrollToTop"; // Adjust the path as needed
 
 import Family from "./pages/Family";
 import Internship from "./pages/Internship";
@@ -23,6 +24,7 @@ import Dummy from './pages/DummyPage/DummyPage'
 export default function App() {
   return (
     <Router>
+      <ScrollToTop /> {/* Add this component here */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/board" element={<Board />} />
