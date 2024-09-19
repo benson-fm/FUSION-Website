@@ -7,8 +7,8 @@ const Testimonial = ({Name, Position, Quote, Image, Mirrored = false, Color = "#
                 <img className="basis-1/4 object-cover overflow-hidden" src={Image}/>
                 <div className="flex-col basis-3/4 p-12 space-y-4">
                     <img src={TestimonialQuote}/>
-                    <div className="text-[1rem] font-medium font-karla leading-6 text-black">{Quote}</div>
-                    <div className="text-xl font-semibold text-black">
+                    <div className="text-xl font-medium">{Quote}</div>
+                    <div className="text-2xl font-semibold">
                         {Name}
                         <div className="text-slate-400 font-normal text-l">
                             {Position}
