@@ -126,7 +126,7 @@ export function MeetingsPage() {
                     <h1 className="font-karla text-black text-[48px] text-center text-4xl font-bold tracking-[0.05em] mt-10">
                         General Meetings
                     </h1>
-                    <p className="text-center font-inter text-base leading-7 px-24 pb-32" style={{color: '#3C3C3C'}}>
+                    <p className="text-center font-[300] font-inter text-base leading-8 px-24 pb-32 w-[75rem]" style={{color: '#3C3C3C'}}>
                       Each week, FUSION holds general meetings where members can engage with Filipinx culture and enhance 
                       their engineering skills in an enjoyable and accessible way. Join us on Wednesdays from 7-9 PM in the 
                       Dr. White Room at the Cross Cultural Center (CCC). Everyone, regardless of major or background, is welcome 

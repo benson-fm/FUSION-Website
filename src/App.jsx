@@ -7,7 +7,7 @@ import AboutUs from "./pages/AboutUs";
 import Home from "./pages/HomePage/Home";
 import Programs from "./pages/ProgramsPage/programs";
 import { MeetingsPage } from "./pages/meetingsPage";
-import Social from "./pages/Social";
+{/*import Social from "./pages/Social";*/}
 import Board from "./pages/Board";
 import { AlumniPage } from "./pages/AlumniPage";
 import { MentorshipPage } from "./pages/MentorshipPage";
@@ -31,7 +31,7 @@ export default function App() {
         <Route path="/aboutUs" element={<AboutUs />} />
         <Route path="/meetings" element={<MeetingsPage />} />
         <Route path="/programs" element={<Programs />} />
-        <Route path="/programs/social" element={<Social />} />
+        {/*<Route path="/programs/social" element={<Social />} />*/}
         <Route path="/programs/alumni" element={<AlumniPage />} />
         <Route path="/programs/mentorship" element={<MentorshipPage />} />
         <Route path="/programs/family" element={<Family />} />
