@@ -3,7 +3,7 @@ import ScrollToTop from "./lib/ScrollToTop"; // Adjust the path as needed
 
 import Family from "./pages/Family";
 import Internship from "./pages/Internship";
-import AboutUs from "./pages/AboutUs";
+import AboutUs from "./pages/AboutUs/AboutUsNew";
 import Home from "./pages/HomePage/Home";
 import Programs from "./pages/ProgramsPage/programs";
 import { MeetingsPage } from "./pages/meetingsPage";
