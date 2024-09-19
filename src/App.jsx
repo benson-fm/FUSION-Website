@@ -18,8 +18,9 @@ import Workshops from "./pages/ProgramsPage/WorkshopsPage/Workshops.jsx";
 import FuFit from "./pages/FuFit";
 import FEPPage from "./pages/ProjectsPage/FEPPage/FEPPage"
 import Credits from "./pages/CreditsPage/Credits";
-import FIPPage from './pages/ProjectsPage/FIPPage/FIPPage'
-import Dummy from './pages/DummyPage/DummyPage'
+import FIPPage from './pages/ProjectsPage/FIPPage/FIPPage';
+import Social from './pages/Social';
+import Dummy from './pages/DummyPage/DummyPage';
 
 export default function App() {
   return (
@@ -40,6 +41,7 @@ export default function App() {
         <Route path="/programs/fundraising" element={<Fundraising />} />
         <Route path="/programs/workshops" element={<Workshops />} />
         <Route path="/programs/fufit" element={<FuFit />} />
+        <Route path="/programs/social" element={<Social />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/credits" element={<Credits />} />
         <Route path="/projects/FEP" element={<FEPPage />} />
