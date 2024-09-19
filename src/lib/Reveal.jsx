@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from "react";
 import { useIsVisible } from "./useIsVisible"; // Adjust the import path as needed
 
-export const Reveal = ({ children, width = "fit-content", duration = 500 }) => {
+export const Reveal = ({ children, width = "", duration = 500 }) => {
   const { ref, isIntersecting } = useIsVisible({ triggerOnce: true });
   const [isVisible, setIsVisible] = useState(false);
 

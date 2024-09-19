@@ -87,13 +87,18 @@
     padding: 10px 20px;
     font-size: 16px;
     font-weight: 600;
-    color: black;
-    background-color: #FFA523;
+    color: #FFA523;
+    background-color: transparent;
     cursor: pointer;
     text-transform: uppercase;
     text-decoration: none;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #FFA523;
 }
 
 .learn-more:hover {
-    background-color: #FF8C00;
+    background-color: #FFA523;
+    color: white;
+    border-color: white;
 }
