@@ -1,4 +1,5 @@
 import React from 'react';
+import Navbar from "../components/Navbar"
 import Footer from '../components/Footer';
 import placeholderPic from '../assets/placeholderPic.png';
 import studyHoursBackground from '../assets/StudyHoursBackground.png';
@@ -11,35 +12,37 @@ import studyHoursSection2Image from '../assets/Section2Image.png';
 import studyHoursSection3Image from '../assets/Section3Image.png';
 import StudyHoursTextWhiteBackground from '../assets/StudyHoursTextWhiteBackground.png'
 import StudyHoursTextGreyBackground from '../assets/StudyHoursTextGreyBackground.png'
+import {Reveal} from "../lib/Reveal";
 
 const StudyHours = () => {
     return (
         <>
             <div className="min-h-screen bg-white">
                 <main>
-                    <section className="relative mb-16">
-                        <div className="relative text-center">
-                            <img src={studyHoursBackground} alt="Placeholder" className="mx-auto" />
-                            <div className="absolute inset-0 flex flex-col justify-center items-center">
-                                <p className="text-3xl text-white">PROGRAMS</p>
-                                <h2 className="text-7xl font-bold text-white">STUDY HOURS</h2>
+                    <Navbar bg={studyHoursBackground} title={"STUDY HOURS"} subtitle={"PROGRAMS"}></Navbar>
+
+                    <section>
+                        
+                        <div className="bg-white w-full h-[30.46875rem] flex items-center justify-center py-40">
+                            <Reveal>
+                            <div className="flex flex-col items-center justify-center w-[59.5rem] h-[16.4375 rem]">
+                                <h1 className="font-karla font-[700] text-5xl text-black pb-3">
+                                Empower Your <span className='text-[#FFA523]'>Learning</span>
+                                </h1>
+                                <div className="mt-[30px] border-t-4 border-[#FAC80A] w-[10rem]"></div>
+                                <div className="mt-[40px]">
+                                <p className="font-inter text-[16px] leading-8 text-[#3C3C3C] text-center ">
+                                Join us for FUSION Study Hours, an ideal space for members to focus, collaborate, and make progress on their work or studies. Workshops are also held during Study Hours to enhance your skills and provide guidance on any struggles you may have. Whether you are aiming to finish an important project, prepare for an exam, or simply catch up on assignments, our supportive environment is designed to help you stay on track!
+                                </p>
+                                </div>
                             </div>
+                            </Reveal>
                         </div>
                     </section>
 
-                    <section className="mb-16 text-center">
-                        <h2 className="text-4xl font-bold mb-4 text-black">
-                            Empower Your <span className="text-[#FFA523]">Learning</span>
-                        </h2>
-                        <div className="h-1 w-32 bg-[#FAC80A] mx-auto mb-8"></div>
-                        <p className="max-w-2xl mx-auto text-gray-600">
-                            Join us for FUSION Study Hours, an ideal space for members to focus, collaborate, and make progress on their work or studies. Workshops are also held during Study Hours to enhance your skills and provide guidance on any struggles you may have. Whether you are aiming to finish an important project, prepare for an exam, or simply catch up on assignments, our supportive environment is designed to help you stay on track!
-                        </p>
-                    </section>
 
 
-
-                    <img src={studyHoursBackground2} alt="Placeholder" className="mx-auto" />
+                    <img src={studyHoursBackground2} alt="Placeholder" className="mx-auto w-full" />
 
                     <section>
                         <div className="grid grid-cols-1">
