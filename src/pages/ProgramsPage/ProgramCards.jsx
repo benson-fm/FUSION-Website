@@ -1,13 +1,19 @@
-import TransparentSunGear from '../../assets/TransparentSunGear.png';
-const ProgramCard  = ({title, description}) => {
+import ProgramCardTriangle from '../../assets/ProgramCardTriangle.png';
+
+const ProgramCard  = ({title, backgroundImage}) => {
     return(
-        <div className="bg-black text-white w-full h-[500px] px-8 py-8 text-center z-50">
-            <div className="text-2xl py-10 tracking-widest">{title}</div>
-            <div className="text-xl">{description}</div>
-            <br/>
-            <button className="bg-[#fac80a] hover:bg-yellow-500 text-black font-bold py-2 px-6">
-                    LEARN MORE
-            </button>   
+        <div className="relative text-white w-full h-[200px] px-8 py-8 text-center z-50"
+         style={{ 
+                backgroundImage: `url(${backgroundImage})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat'
+            }}>
+                <img src={ProgramCardTriangle} alt="Triangle" className="absolute bottom-0 left-0 w-12 h-12"
+            />
+
+            <div className="font-karla text-[24px] text-center font-bold leading-[28.06px] tracking-[0.12em] mt-24">{title}</div>
+              
         </div>
     );
 }
@@ -16,11 +22,11 @@ const ProgramCards = ({Programs}) => {
     let cards = []
     Programs.forEach((program, index) => {
         cards.push(
-            <ProgramCard title={program.title} description={program.description}/>
+            <ProgramCard title={program.title} backgroundImage={program.backgroundImage}/>
         )
     });
     return(
-        <div className="bg-cover bg-white grid grid-cols-3 grid-rows-3 gap-16 py-5 px-80" style={{ backgroundImage: `url(${TransparentSunGear}) `}}>
+        <div className="grid grid-cols-3 grid-rows-3 gap-16 py-5 px-80">
             {cards}
         </div>
     )
