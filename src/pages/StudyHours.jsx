@@ -1,7 +1,5 @@
-import React from 'react';
 import Navbar from "../components/Navbar"
 import Footer from '../components/Footer';
-import placeholderPic from '../assets/placeholderPic.png';
 import studyHoursBackground from '../assets/StudyHoursBackground.png';
 import studyHoursBackground2 from '../assets/StudyHoursBackground2.png';
 import studyHoursSection1 from '../assets/StudyHoursSection1.png';

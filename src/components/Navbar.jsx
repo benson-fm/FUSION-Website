@@ -129,10 +129,10 @@ function Navbar({ bg, title, subtitle, homeNav = false }) {
                 className="dropdown-content menu bg-[#0F0A0080] rounded-box z-[1] w-40 p-2 shadow"
               >
                 <li>
-                  <a href="/programs/internship">FEP</a>
+                  <a href="/projects/FEP">FEP</a>
                 </li>
                 <li>
-                  <a href="/programs/mentorship">FIP</a>
+                  <a href="/projects/FIP">FIP</a>
                 </li>
               </ul>
             </div>

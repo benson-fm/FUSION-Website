@@ -54,19 +54,19 @@ const Footer = () => {
               <a href="/">HOME</a>
             </li>
             <li>
-              <a href="/">ABOUT</a>
+              <a href="/aboutUs">ABOUT</a>
             </li>
             <li>
-              <a href="/">MEETINGS</a>
+              <a href="/meetings">MEETINGS</a>
             </li>
             <li>
-              <a href="/">BOARD</a>
+              <a href="/board">BOARD</a>
             </li>
             <li>
-              <a href="/">PROGRAMS</a>
+              <a href="/programs">PROGRAMS</a>
             </li>
             <li>
-              <a href="/">FUSIONCON</a>
+              <a href="/projects">PROJECTS</a>
             </li>
           </ul>
         </nav>
@@ -92,7 +92,9 @@ const Footer = () => {
               Copyright FUSION 2024
             </p>
           </div>
-          <p className="text-sm text-[#7D7D7D] z-50 text-wrap">Developed by Benson Manzano, Daniela Herrera, Noah Tizon, Arvin Limjoco, Leilani Bascos, Dommenick Lacuata, Arlaghn Cayanan, Ariel Abaincia, Ethan Santos</p>
+          <a href="/credits">
+          <p className="text-sm text-[#7D7D7D] z-50 text-wrap">Developed by FUSITE Team</p>
+          </a>
         </div>
         <img
           src={logo}

@@ -22,7 +22,7 @@ const ProgramCarousel = ({Programs}) => {
         )
     });
     return(
-        <div className="carousel w-full">
+        <div className="carousel w-full h-dvh">
             {programList}
         </div>
     );
