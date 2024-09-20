@@ -4,22 +4,32 @@ import React, { useState } from "react";
 import HalfGear from "../images/HalfGear.png";
 
 import CoICS1 from "../images/CoICS1.png";
+import CoCS2 from "../images/CoCS2.png"
 import CoEngineering1 from "../images/CoEngineering1.png";
 import CoEngineering2 from "../images/CoEngineering2.png";
 
 import CoAthletics1 from "../images/CoAthletics1.png";
 import CoAthletics2 from "../images/CoAthletics2.png";
 import CoAcademics2 from "../images/CoAcademics2.png";
+import CoAcademics1 from "../images/CoAcademics1.png";
 import CoPublicity1 from "../images/CoPublicity1.png";
 import CoPublicity2 from "../images/CoPublicity2.png";
+
+import CoFund1 from "../images/CoFund1.png";
+import CoFund2 from "../images/CoFund2.png";
+
+import Media from "../images/Media.png"
 
 import CoNetworking1 from "../images/CoNetworking1.png";
 import CoNetworking2 from "../images/CoNetworking2.png";
 
 import CoSocial1 from "../images/CoSocial1.png";
+import CoSocial2 from "../images/CoSocial2.png";
 
 import CulturalDirector from "../images/CulturalDirector.png";
 import GrayPlaceholder from "../images/GrayPlaceholder.png";
+
+
 
 const teamMembers = [
   {
@@ -37,7 +47,7 @@ const teamMembers = [
   {
     name: "Jerome Manarang",
     position: "Co-ICS Project Director",
-    photoUrl: GrayPlaceholder,
+    photoUrl: CoCS2,
     pronouns: "HE/HIM",
     year: "3RD YEAR",
     major: "COMPUTER SCIENCE",
@@ -96,7 +106,7 @@ const teamMembers = [
   {
     name: "Janice Ho",
     position: "Co-Academics Director",
-    photoUrl: GrayPlaceholder,
+    photoUrl: CoAcademics1,
     pronouns: "SHE/HER",
     year: "2ND YEAR",
     major: "COMPUTER ENGINEERING",
@@ -120,7 +130,7 @@ const teamMembers = [
   {
     name: "Alexa Ancheta",
     position: "Co-Fundraising Director",
-    photoUrl: GrayPlaceholder,
+    photoUrl: CoFund1,
     pronouns: "SHE/HER",
     year: "3RD YEAR",
     major: "BUSINESS ECONOMICS",
@@ -132,7 +142,7 @@ const teamMembers = [
   {
     name: "Bernard Tilano",
     position: "Co-Fundraising Director",
-    photoUrl: GrayPlaceholder,
+    photoUrl: CoFund2,
     pronouns: "HE/HIM",
     year: "4TH YEAR",
     major: "AEROSPACE ENGINEERING",
@@ -192,7 +202,7 @@ const teamMembers = [
   {
     name: "Klhoe Antolin",
     position: "Co-Social Director",
-    photoUrl: CoSocial1,
+    photoUrl: CoSocial2,
     pronouns: "SHE/HER",
     year: "3RD YEAR",
     major: "BIOMEDICAL ENGINEERING",
@@ -214,12 +224,12 @@ const teamMembers = [
   {
     name: "Lourdes Buwan",
     position: "Media Director",
-    photoUrl: GrayPlaceholder,
+    photoUrl: Media,
     pronouns: "SHE/HER",
     year: "3RD YEAR",
     major: "CHICANO/LATINO STUDIES",
     about: 
-"Hi! My name is Lourdes Buan and I am your media director who helps in documenting the growth of Fusion. I take pictures, make videos and work on Fusionbook alongside Publicity as well as many other responsibilities. As media director I plan to showcase Fusion in a professional and friendly light. Outside of being Media Director I do enjoy photography and videography as well as reading and crochet!",
+"Hi! My name is Lourdes Buwan and I am your media director who helps in documenting the growth of Fusion. I take pictures, make videos and work on Fusionbook alongside Publicity as well as many other responsibilities. As media director I plan to showcase Fusion in a professional and friendly light. Outside of being Media Director I do enjoy photography and videography as well as reading and crochet!",
     contact: "...",
     linkedin: "...",
   },

@@ -15,29 +15,34 @@ import MeetingsCarouselBackground from "../assets/MeetingsCarouselBackground.png
 
 const Meetings = {
   "Fall":
-    [{key:"a" ,title:"Meeting Title", date:"XX/XX/XX", pillar:"PILLAR",
-    description:"FUSION meetings provide an excellent chance for engineers, Filipinos, and UCI students to connect in a friendly and inclusive setting. Currently, we don't have any meetings ready to showcase, but please check back soon to join in on the fun.",
-    image:PlaceholderPic},
-    {key:"b" ,title:"Meeting Title", date:"XX/XX/XX", pillar:"PILLAR",
-    description:"FUSION meetings provide an excellent chance for engineers, Filipinos, and UCI students to connect in a friendly and inclusive setting. Currently, we don't have any meetings ready to showcase, but please check back soon to join in on the fun.",
-    image:PlaceholderPic}],
+    // [{key:"a" ,title:"Meeting Title", date:"XX/XX/XX", pillar:"PILLAR",
+    // description:"FUSION meetings provide an excellent chance for engineers, Filipinos, and UCI students to connect in a friendly and inclusive setting. Currently, we don't have any meetings ready to showcase, but please check back soon to join in on the fun.",
+    // image:PlaceholderPic},
+    // {key:"b" ,title:"Meeting Title", date:"XX/XX/XX", pillar:"PILLAR",
+    // description:"FUSION meetings provide an excellent chance for engineers, Filipinos, and UCI students to connect in a friendly and inclusive setting. Currently, we don't have any meetings ready to showcase, but please check back soon to join in on the fun.",
+    // image:PlaceholderPic}],
+    [],
 
-  "Winter":[{key:"a" ,title:"Meeting Title", date:"XX/XX/XX", pillar:"PILLAR",
-    description:"FUSION meetings provide an excellent chance for engineers, Filipinos, and UCI students to connect in a friendly and inclusive setting. Currently, we don't have any meetings ready to showcase, but please check back soon to join in on the fun.",
-    image:PlaceholderPic}],
+  "Winter":
+  // [{key:"a" ,title:"Meeting Title", date:"XX/XX/XX", pillar:"PILLAR",
+  //   description:"FUSION meetings provide an excellent chance for engineers, Filipinos, and UCI students to connect in a friendly and inclusive setting. Currently, we don't have any meetings ready to showcase, but please check back soon to join in on the fun.",
+  //   image:PlaceholderPic}],
+  [],
 
-  "Spring":[{key:"a" ,title:"Meeting Title", date:"XX/XX/XX", pillar:"PILLAR",
-    description:"FUSION meetings provide an excellent chance for engineers, Filipinos, and UCI students to connect in a friendly and inclusive setting. Currently, we don't have any meetings ready to showcase, but please check back soon to join in on the fun.",
-    image:PlaceholderPic},
-    {key:"b" ,title:"Meeting Title", date:"XX/XX/XX", pillar:"PILLAR",
-    description:"FUSION meetings provide an excellent chance for engineers, Filipinos, and UCI students to connect in a friendly and inclusive setting. Currently, we don't have any meetings ready to showcase, but please check back soon to join in on the fun.",
-    image:PlaceholderPic},
-    {key:"a" ,title:"Meeting Title", date:"XX/XX/XX", pillar:"PILLAR",
-      description:"FUSION meetings provide an excellent chance for engineers, Filipinos, and UCI students to connect in a friendly and inclusive setting. Currently, we don't have any meetings ready to showcase, but please check back soon to join in on the fun.",
-      image:PlaceholderPic},
-      {key:"b" ,title:"Meeting Title", date:"XX/XX/XX", pillar:"PILLAR",
-      description:"FUSION meetings provide an excellent chance for engineers, Filipinos, and UCI students to connect in a friendly and inclusive setting. Currently, we don't have any meetings ready to showcase, but please check back soon to join in on the fun.",
-      image:PlaceholderPic}]};
+  "Spring":
+  // [{key:"a" ,title:"Meeting Title", date:"XX/XX/XX", pillar:"PILLAR",
+  //   description:"FUSION meetings provide an excellent chance for engineers, Filipinos, and UCI students to connect in a friendly and inclusive setting. Currently, we don't have any meetings ready to showcase, but please check back soon to join in on the fun.",
+  //   image:PlaceholderPic},
+  //   {key:"b" ,title:"Meeting Title", date:"XX/XX/XX", pillar:"PILLAR",
+  //   description:"FUSION meetings provide an excellent chance for engineers, Filipinos, and UCI students to connect in a friendly and inclusive setting. Currently, we don't have any meetings ready to showcase, but please check back soon to join in on the fun.",
+  //   image:PlaceholderPic},
+  //   {key:"a" ,title:"Meeting Title", date:"XX/XX/XX", pillar:"PILLAR",
+  //     description:"FUSION meetings provide an excellent chance for engineers, Filipinos, and UCI students to connect in a friendly and inclusive setting. Currently, we don't have any meetings ready to showcase, but please check back soon to join in on the fun.",
+  //     image:PlaceholderPic},
+  //     {key:"b" ,title:"Meeting Title", date:"XX/XX/XX", pillar:"PILLAR",
+  //     description:"FUSION meetings provide an excellent chance for engineers, Filipinos, and UCI students to connect in a friendly and inclusive setting. Currently, we don't have any meetings ready to showcase, but please check back soon to join in on the fun.",
+  //     image:PlaceholderPic}]};
+  []};
 
 
 function Meeting({title, pillar, date, description, image}){
@@ -82,13 +87,13 @@ export function MeetingsPage() {
   
     return(
       <div className="relative overflow-hidden px-72 space-y-24 py-32 bg-white">
-        <img src={HalfGear} className="absolute right-0"/>
+        <img src={HalfGear} className="absolute right-0 top-0"/>
         <div className="flex flex-row justify-between items-center">
           <div>
             <p className="font-[#7D7D7D] text-xl font-semibold">
               &gt;&gt; ‘24 -‘25
             </p>
-            <p className="text-5xl font-semibold">
+            <p className="text-5xl font-semibold text-black">
               {activeQuarter} Quarter Meetings
             </p>
           </div>
@@ -103,8 +108,9 @@ export function MeetingsPage() {
         </ul>
         <div className="flex flex-row justify-between items-center">
             <button className="bg-black text-white font-inter text-xl font-semibold leading-[35px] tracking-widest text-left px-4 py-2 flex items-center justify-between">
-              <span>VIEW MORE</span>
-              <img src={ViewMoreButtonVector} alt="> arrow" className="ml-2 w-3 h-5" />
+              {/* <span>VIEW MORE</span> */}
+              <span>COMING SOON</span>
+              {/* <img src={ViewMoreButtonVector} alt="> arrow" className="ml-2 w-3 h-5" /> */}
             </button>
             <div>
               <QuarterButton Quarter="Fall" />

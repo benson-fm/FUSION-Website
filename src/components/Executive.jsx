@@ -8,6 +8,7 @@ import IVP from "../images/IVP.png";
 import GrayPlaceholder from "../images/GrayPlaceholder.png";
 import Treasurer from "../images/Treasurer.jpg";
 import Secretary from "../images/Secretary.png";
+import EVP from "../images/EVP.png";
 
 const teamMembers = [
   {
@@ -37,12 +38,12 @@ const teamMembers = [
   {
     name: "Justin",
     position: "External Vice President",
-    photoUrl: GrayPlaceholder,
+    photoUrl: EVP,
     pronouns: "HE/HIM",
     year: "4TH YEAR",
     major: "MECHANICAL ENGINEERING",
-    about: "...",
-    contact: "...",
+    about: "Hey everyone! My name is Justin Marasigan, and as EVP, I serve as the main point of contact between FUSION and outside organizations. By maintaining connections with these orgs and informing general members of any upcoming events/opportunities that they offer, I intend to foster the professional, cultural, and social growth of both the club as a whole and its members.",
+    contact: "marasij1@uci.edu",
     linkedin: "...",
   },
   {
