@@ -40,13 +40,16 @@ const JoinFusionBlock = () => {
             WE ARE ALWAYS OPEN TO MORE PEOPLE JOINING US!
           </p>
         </Reveal>
-        <button
+        <a
+          href="https://forms.gle/iiEaTQqnDQcRqV347"
+          target="_blank"
+          rel="noopener noreferrer"
           className="bg-[#FFA523] hover:bg-[#FFD700] hover:text-[#3C3C3C] text-white font-inter font-[600] text-[1.5rem] leading-[2.1875rem] tracking-[0.16em] py-2 px-8 border-none cursor-pointer rounded-bl-[25px] rounded-tr-[25px] transition-colors duration-300"
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >
           SIGN UP HERE {'>'}
-        </button>
+        </a>
       </div>
     </div>
   );
